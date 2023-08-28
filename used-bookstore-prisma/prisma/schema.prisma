@@ -1,0 +1,59 @@
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["fullTextSearch", "fullTextIndex"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id             String   @id @default(uuid())
+  name           String
+  zipCode        Int
+  phone          String
+  address        String
+  district       String
+  city           String
+  cpf            String   @unique
+  email          String
+  password       String
+  repeatPassword String
+  created_at     DateTime @default(now())
+  order          Order[]
+
+  @@map("users")
+}
+
+model Order {
+  id           String   @id @default(uuid())
+  products     Json[]
+  orderSummary Json[]
+  delivery     Json[]
+  created_at   DateTime @default(now())
+  userId       String
+  author       User     @relation(fields: [userId], references: [id])
+
+  @@map("orders")
+}
+
+model Product {
+  id            String   @id @default(uuid())
+  livro         String   @unique
+  autor         String
+  ano           Int
+  genero        String
+  image         String   @db.Text
+  quantidade    Int
+  precoSugerido Float
+  preco         Float
+  sinopse       String   @db.Text
+  idioma        String
+  isbn          String
+  fabricante    String
+  dimensoes     String
+  created_at    DateTime @default(now())
+
+  @@map("products")
+}

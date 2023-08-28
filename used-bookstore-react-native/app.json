@@ -1,0 +1,16 @@
+{
+  "expo": {
+    "name": "used-bookstore-react-native",
+    "slug": "used-bookstore",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "48d3f263-894a-4e55-a514-3e55cbf21f00"
+      }
+    },
+    "owner": "mateusanderle"
+  }
+}
