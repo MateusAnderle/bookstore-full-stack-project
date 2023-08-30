@@ -65,13 +65,13 @@ export default function Home() {
     try {
       setIconIsLoading(true);
       await api.delete(`/products/${id}`);
-      const notify = () => toast.success("Produto removido do estoque!");
+      const notify = () => toast.success("Product removed!");
       notify();
       fetchBooks();
       setIconIsLoading(false);
     } catch (error) {
       console.log(error);
-      const notify = () => toast.error("Erro ao deletar produto!");
+      const notify = () => toast.error("Delete error!");
       notify();
     }
   }
@@ -128,7 +128,7 @@ export default function Home() {
           pauseOnHover
           theme="light"
         />
-        <Title>Produtos cadastrados</Title>
+        <Title>Registered products</Title>
         <Container>
           <ul>
             {isLoading ? (
@@ -143,19 +143,19 @@ export default function Home() {
                       <ContentWrapper>
                         <BookTitle>{book.livro}</BookTitle>
                         <BookDescription>
-                          <B>Autor:</B> {book.autor}
+                          <B>Author:</B> {book.autor}
                         </BookDescription>
                         <BookDescription>
-                          <B>Ano de publicação:</B> {book.ano}
+                          <B>Publish year:</B> {book.ano}
                         </BookDescription>
                         <BookDescription>
-                          <B>Gênero:</B> {book.genero}
+                          <B>Genre:</B> {book.genero}
                         </BookDescription>
                         <BookDescription>
-                          <B>Quantidade em estoque:</B> {book.quantidade}
+                          <B>Quantity:</B> {book.quantidade}
                         </BookDescription>
                         <BookDescription>
-                          <B>Preço unitário: </B>
+                          <B>Price: </B>
                           {currencyBRL(book.preco)}
                         </BookDescription>
                       </ContentWrapper>
@@ -178,11 +178,11 @@ export default function Home() {
                       )}
 
                       <button onClick={() => editBook(book.id)}>
-                        <PencilSimple size={24} /> Editar
+                        <PencilSimple size={24} /> Edit
                       </button>
 
                       <button onClick={() => deleteBook(book.id)}>
-                        <Trash size={24} /> Excluir
+                        <Trash size={24} /> Delete
                       </button>
                     </ButtonIcons>
                   </Booklist>
@@ -190,8 +190,8 @@ export default function Home() {
               })
             ) : (
               <>
-                <h3>Algo deu errado</h3>
-                <p>Volte a página</p>
+                <h3>Something went wrong</h3>
+                <p>Go back</p>
               </>
             )}
           </ul>

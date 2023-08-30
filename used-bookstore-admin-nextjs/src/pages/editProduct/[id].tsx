@@ -20,35 +20,35 @@ import * as yup from "yup";
 
 const registrationSchema = yup
   .object({
-    name: yup.string().required("Este campo é obrigatório"),
-    author: yup.string().required("Este campo é obrigatório"),
+    name: yup.string().required("This field is required"),
+    author: yup.string().required("This field is required"),
     year: yup
       .number()
-      .integer("Este campo não pode conter decimais")
-      .required("Este campo é obrigatório")
-      .typeError("Este campo só permite números"),
-    genre: yup.string().required("Este campo é obrigatório"),
-    bookcover: yup.string().required("Este campo é obrigatório"),
+      .integer("This field cannot contain decimals")
+      .required("This field is required")
+      .typeError("This field only allows numbers"),
+    genre: yup.string().required("This field is required"),
+    bookcover: yup.string().required("This field is required"),
     amount: yup
       .number()
-      .required("Este campo é obrigatório")
-      .typeError("Este campo só permite números"),
+      .required("This field is required")
+      .typeError("This field only allows numbers"),
     sugestPrice: yup
       .number()
-      .required("Este campo é obrigatório")
-      .typeError("Este campo só permite números"),
+      .required("This field is required")
+      .typeError("This field only allows numbers"),
     price: yup
       .number()
-      .required("Este campo é obrigatório")
-      .typeError("Este campo só permite números"),
-    synopsis: yup.string().required("Este campo é obrigatório"),
-    language: yup.string().required("Este campo é obrigatório"),
+      .required("This field is required")
+      .typeError("This field only allows numbers"),
+    synopsis: yup.string().required("This field is required"),
+    language: yup.string().required("This field is required"),
     isbn: yup
       .number()
-      .required("Este campo é obrigatório")
-      .typeError("Este campo só permite números"),
-    manufacturer: yup.string().required("Este campo é obrigatório"),
-    dimensions: yup.string().required("Este campo é obrigatório"),
+      .required("This field is required")
+      .typeError("This field only allows numbers"),
+    manufacturer: yup.string().required("This field is required"),
+    dimensions: yup.string().required("This field is required"),
   })
   .required();
 
@@ -113,7 +113,7 @@ export default function ProductRegistration() {
       router.push("/");
     } catch (error) {
       console.log(error);
-      const notify = () => toast.error("Erro ao cadastrar!");
+      const notify = () => toast.error("Registration error");
       notify();
     }
   };
@@ -143,7 +143,7 @@ export default function ProductRegistration() {
           pauseOnHover
           theme="light"
         />
-        <Title>Editar produto</Title>
+        <Title>Edit product</Title>
 
         {isLoader ? (
           <Loader />
@@ -156,7 +156,7 @@ export default function ProductRegistration() {
                   <input
                     type="number"
                     step="1"
-                    placeholder="Verifique o ISBN"
+                    placeholder="ISBN"
                     {...register("isbn")}
                   />
                   {errors.isbn && (
@@ -167,9 +167,9 @@ export default function ProductRegistration() {
                 </label>
 
                 <label>
-                  Nome do produto:
+                  Product name:
                   <input
-                    placeholder="Digite aqui o nome do produto"
+                    placeholder="Product name"
                     {...register("name")}
                   />
                   {errors.name && (
@@ -182,9 +182,9 @@ export default function ProductRegistration() {
 
               <TwoInputsContainer>
                 <label>
-                  Autor:
+                Author:
                   <input
-                    placeholder="Digite aqui o autor"
+                    placeholder="Author"
                     {...register("author")}
                   />
                   {errors.author && (
@@ -195,11 +195,11 @@ export default function ProductRegistration() {
                 </label>
 
                 <label>
-                  Ano de publicação:
+                Year of publication:
                   <input
                     type="number"
                     step="1"
-                    placeholder="Digite aqui o ano de publicação"
+                    placeholder="Year of publication"
                     {...register("year")}
                   />
                   {errors.year && (
@@ -212,9 +212,9 @@ export default function ProductRegistration() {
 
               <TwoInputsContainer>
                 <label>
-                  Gênero:
+                  Book genre:
                   <input
-                    placeholder="Digite aqui o gênero do livro"
+                    placeholder="Book genre"
                     {...register("genre")}
                   />
                   {errors.genre && (
@@ -225,9 +225,9 @@ export default function ProductRegistration() {
                 </label>
 
                 <label>
-                  Capa:
+                  Book cover:
                   <input
-                    placeholder="Selecione uma imagem (URL) com a capa do livro"
+                    placeholder="Select an image (URL) with the book cover"
                     {...register("bookcover")}
                   />
                   {errors.bookcover && (
@@ -240,11 +240,11 @@ export default function ProductRegistration() {
 
               <TwoInputsContainer>
                 <label>
-                  Quantidade:
+                  Quantity:
                   <input
                     type="number"
                     step="1"
-                    placeholder="Digite aqui a quantidade que deseja cadastrar"
+                    placeholder="Quantity"
                     {...register("amount")}
                   />
                   {errors.amount && (
@@ -255,11 +255,11 @@ export default function ProductRegistration() {
                 </label>
 
                 <label>
-                  Preço sugerido pela editora:
+                  Suggest price:
                   <input
                     type="number"
                     step="0.01"
-                    placeholder="Digite aqui o preço sugerido"
+                    placeholder="Suggest price"
                     {...register("sugestPrice")}
                   />
                   {errors.sugestPrice && (
@@ -272,11 +272,11 @@ export default function ProductRegistration() {
 
               <TwoInputsContainer>
                 <label>
-                  Preço de venda:
+                  Price:
                   <input
                     type="number"
                     step="0.01"
-                    placeholder="Digite aqui o preço de venda"
+                    placeholder="Price"
                     {...register("price")}
                   />
                   {errors.price && (
@@ -287,9 +287,9 @@ export default function ProductRegistration() {
                 </label>
 
                 <label>
-                  Sinopse:
+                Synopsis:
                   <input
-                    placeholder="Digite uma sinopse para esse livro"
+                    placeholder="Synopsis"
                     {...register("synopsis")}
                   />
                   {errors.synopsis && (
@@ -302,9 +302,9 @@ export default function ProductRegistration() {
 
               <TwoInputsContainer>
                 <label>
-                  Idioma do livro:
+                Language:
                   <input
-                    placeholder="Digite aqui o idioma do produto"
+                    placeholder="Language"
                     {...register("language")}
                   />
                   {errors.language && (
@@ -315,9 +315,9 @@ export default function ProductRegistration() {
                 </label>
 
                 <label>
-                  Editora:
+                Manufacturer:
                   <input
-                    placeholder="Digite a editora do produto"
+                    placeholder="Manufacturer"
                     {...register("manufacturer")}
                   />
                   {errors.manufacturer && (
@@ -330,9 +330,9 @@ export default function ProductRegistration() {
 
               <TwoInputsContainer>
                 <label>
-                  Dimensões do livro:
+                Dimensions:
                   <input
-                    placeholder="Digite aqui as dimensões do produto"
+                    placeholder="Dimensions"
                     {...register("dimensions")}
                   />
                   {errors.dimensions && (
@@ -346,7 +346,7 @@ export default function ProductRegistration() {
               <SubmitContainer>
                 <input
                   type="submit"
-                  value="Atualizar produto"
+                  value="Update product"
                   style={{ cursor: "pointer" }}
                 />
                 {isLoading && (

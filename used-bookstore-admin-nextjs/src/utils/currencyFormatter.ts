@@ -1,7 +1,7 @@
 const currencyBRL = (number: number) => {
-  const numberFormated = new Intl.NumberFormat("pt-BR", {
+  const numberFormated = new Intl.NumberFormat("en-US", {
     style: "currency",
-    currency: "BRL",
+    currency: "USD",
   }).format(number);
 
   return numberFormated;

@@ -19,23 +19,23 @@ export default function Header() {
             <Books />
             <div>
               <h1>Sebus</h1>
-              <span>Livraria de Novos e Usados</span>
+              <span>Used bookstore</span>
             </div>
           </LogoWrapper>
         </Link>
 
         <Icons>
-          <AdminDescription>Painel administrativo</AdminDescription>
+          <AdminDescription>Administrative panel</AdminDescription>
         </Icons>
       </MainHeader>
 
       <NavContainer>
         <NavHeader>
           <Link href={"/"}>
-            <li>Consulta de produtos</li>
+            <li>Search products</li>
           </Link>
           <Link href={"/productRegistration"}>
-            <li>Cadastrar novo produto</li>
+            <li>Add new product</li>
           </Link>
         </NavHeader>
       </NavContainer>
