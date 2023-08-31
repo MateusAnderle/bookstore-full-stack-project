@@ -1,4 +1,4 @@
-package com.usedbookstorereactnative.newarchitecture.modules;
+package com.mateusanderle.usedbookstore.newarchitecture.modules;
 
 import com.facebook.jni.HybridData;
 import com.facebook.react.ReactPackage;

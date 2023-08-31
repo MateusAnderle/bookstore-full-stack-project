@@ -1,4 +1,4 @@
-package com.usedbookstorereactnative;
+package com.mateusanderle.usedbookstore;
 
 import android.os.Build;
 import android.os.Bundle;

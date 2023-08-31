@@ -11,6 +11,12 @@
         "projectId": "48d3f263-894a-4e55-a514-3e55cbf21f00"
       }
     },
-    "owner": "mateusanderle"
+    "owner": "mateusanderle",
+    "android": {
+      "package": "com.mateusanderle.usedbookstore"
+    },
+    "ios": {
+      "bundleIdentifier": "com.mateusanderle.usedbookstore"
+    }
   }
 }

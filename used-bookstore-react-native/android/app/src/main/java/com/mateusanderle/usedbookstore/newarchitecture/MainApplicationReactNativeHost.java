@@ -1,4 +1,4 @@
-package com.usedbookstorereactnative.newarchitecture;
+package com.mateusanderle.usedbookstore.newarchitecture;
 
 import android.app.Application;
 import androidx.annotation.NonNull;
@@ -20,9 +20,9 @@ import com.facebook.react.fabric.EmptyReactNativeConfig;
 import com.facebook.react.fabric.FabricJSIModuleProvider;
 import com.facebook.react.fabric.ReactNativeConfig;
 import com.facebook.react.uimanager.ViewManagerRegistry;
-import com.usedbookstorereactnative.BuildConfig;
-import com.usedbookstorereactnative.newarchitecture.components.MainComponentsRegistry;
-import com.usedbookstorereactnative.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
+import com.mateusanderle.usedbookstore.BuildConfig;
+import com.mateusanderle.usedbookstore.newarchitecture.components.MainComponentsRegistry;
+import com.mateusanderle.usedbookstore.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
 import java.util.ArrayList;
 import java.util.List;
 
