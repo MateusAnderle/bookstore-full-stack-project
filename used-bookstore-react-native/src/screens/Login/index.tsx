@@ -76,11 +76,11 @@ export function Login() {
           <Controller
             name="password"
             control={control}
-            rules={{ required: "Senha obrigatório" }}
+            rules={{ required: "Password required" }}
             render={({ field: { onChange, value } }) => (
               <S.Input
                 secureTextEntry
-                placeholder="Digite sua senha"
+                placeholder="Password"
                 placeholderTextColor="#AAA"
                 onChangeText={onChange}
                 value={value}
@@ -108,12 +108,12 @@ export function Login() {
           </S.LoginButton>
 
           <S.LoginRegister>
-            Ainda não tem cadastro?{" "}
+          Don't have an account yet?{" "}
             <Link
               to={{ screen: "Register" }}
               style={{ fontWeight: "bold", color: "#005eff" }}
             >
-              Clique aqui!
+              Click here!
             </Link>
           </S.LoginRegister>
         </S.Content>

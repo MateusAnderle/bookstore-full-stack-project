@@ -5,7 +5,7 @@ import { api } from "../../utils/api";
 import { dateInDMY, dateInHMS } from "../../utils/dateFormatter";
 import { currencyBRL } from "../../utils/currencyFormatter";
 import { useAuth } from "../../hooks/auth";
-import { Link, useNavigation } from "@react-navigation/native";
+import { useNavigation } from "@react-navigation/native";
 import { Footer } from "../../components/Footer";
 import { Header } from "../../components/Header";
 import { BackButton } from "../../components/BackButton";
@@ -36,7 +36,7 @@ export default function User() {
         },
       });
     } catch (error) {
-      Alert.alert("Sessão expirada! Por favor refaça seu Login");
+      Alert.alert("Session expired! Please log in again");
       console.log(error);
       setData([]);
       setTimeout(() => {
@@ -93,15 +93,15 @@ export default function User() {
                 </S.Icon>
                 <S.Greetings>
                   <Text style={{ fontWeight: "bold", fontSize: 16 }}>
-                    Bem-vindo(a)!
+                    Welcome!
                   </Text>
                 </S.Greetings>
-                <Text>Para sair da conta, clique aqui</Text>
+                <Text>To log out of your account, click here</Text>
                 <S.LogoutButton onPress={handleSignOut}>
                   <Text
                     style={{ color: "#fff", fontSize: 16, fontWeight: "bold" }}
                   >
-                    Sair
+                    Logout
                   </Text>
                 </S.LogoutButton>
               </S.UserContainer>
@@ -109,7 +109,7 @@ export default function User() {
               <S.OrdersContainer>
                 <S.OrdersTitle>
                   <Text style={{ fontWeight: "bold", fontSize: 16 }}>
-                    Histórico de pedidos
+                  Order history
                   </Text>
                 </S.OrdersTitle>
 
@@ -119,22 +119,22 @@ export default function User() {
                         <S.OrderBox key={order.id}>
                           <View>
                             <Text style={{ fontWeight: "bold" }}>
-                              Data da compra: {dateInDMY(order?.created_at)}
+                            Purchase date: {dateInDMY(order?.created_at)}
                             </Text>
                           </View>
                           <View>
                             <Text style={{ fontWeight: "bold" }}>
-                              Hora da compra: {dateInHMS(order?.created_at)}
+                            Purchase time: {dateInHMS(order?.created_at)}
                             </Text>
                           </View>
                           <View>
                             <Text>
-                              Itens: {order?.orderSummary[0]?.numberOfItems}
+                              Items: {order?.orderSummary[0]?.numberOfItems}
                             </Text>
                           </View>
                           <View>
                             <Text>
-                              Total da compra:{" "}
+                            Purchase amount:{" "}
                               {currencyBRL(
                                 order?.orderSummary[0]?.totalPriceCart
                               )}
@@ -151,9 +151,9 @@ export default function User() {
           <>
             <S.EmptyList>
               <Text style={{ marginBottom: 10 }}>
-                Você não tem permissão para acessar essa página
+                You do not have permission to access this page
               </Text>
-              <Text>Você será redirecionado para a tela inicial</Text>
+              <Text>You will be redirected to the home screen</Text>
             </S.EmptyList>
           </>
         )}

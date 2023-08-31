@@ -18,7 +18,7 @@ export function ProductDetail() {
   async function handleAddToCart() {
     const findEqual = cartProducts.find((item) => item.id === product.id);
     if (findEqual) {
-      Alert.alert("Produto já existente no carrinho!");
+      Alert.alert("Product already in cart!");
       return;
     }
     product.quantidade = 1;
@@ -39,31 +39,31 @@ export function ProductDetail() {
             <S.BookAuthor>{product.autor}</S.BookAuthor>
             <S.Price>{currencyBRL(product.preco)}</S.Price>
             <S.SuggestedPrice>
-              Preço sugerido na editora: {currencyBRL(product.precoSugerido)}
+            Publisher's suggested price: {currencyBRL(product.precoSugerido)}
             </S.SuggestedPrice>
 
             <S.BuyButton onPress={handleAddToCart}>
-              <S.TextBuyButton>COMPRAR</S.TextBuyButton>
+              <S.TextBuyButton>BUY</S.TextBuyButton>
             </S.BuyButton>
             <S.PaymentConditions>
-              Em 1x no cartão de crédito sem juros
+            No interest credit card payment
             </S.PaymentConditions>
             <S.BuyDescription>
-              Este porduto é vendido e entregue por Sebus
+            This product is sold and delivered by Sebus
             </S.BuyDescription>
           </S.ProductBox>
 
           <S.ProductBox>
-            <S.SynopsisTitle>Sinopse</S.SynopsisTitle>
+            <S.SynopsisTitle>Synopsis</S.SynopsisTitle>
             <S.Synopsis>{product.sinopse}</S.Synopsis>
           </S.ProductBox>
 
           <S.ProductBox>
-            <S.ProductDatasheetTitle>Ficha técnica</S.ProductDatasheetTitle>
+            <S.ProductDatasheetTitle>Technical specifications</S.ProductDatasheetTitle>
 
             <S.DataSheetLine>
               <S.DataKey>
-                <S.DataTextTitle>Livro</S.DataTextTitle>
+                <S.DataTextTitle>Book</S.DataTextTitle>
               </S.DataKey>
 
               <S.DataValue>
@@ -73,7 +73,7 @@ export function ProductDetail() {
 
             <S.DataSheetLine>
               <S.DataKey>
-                <S.DataTextTitle>Autor</S.DataTextTitle>
+                <S.DataTextTitle>Author</S.DataTextTitle>
               </S.DataKey>
 
               <S.DataValue>
@@ -83,7 +83,7 @@ export function ProductDetail() {
 
             <S.DataSheetLine>
               <S.DataKey>
-                <S.DataTextTitle>Gênero</S.DataTextTitle>
+                <S.DataTextTitle>Genre</S.DataTextTitle>
               </S.DataKey>
 
               <S.DataValue>
@@ -93,7 +93,7 @@ export function ProductDetail() {
 
             <S.DataSheetLine>
               <S.DataKey>
-                <S.DataTextTitle>Quantidade</S.DataTextTitle>
+                <S.DataTextTitle>Quantity</S.DataTextTitle>
               </S.DataKey>
 
               <S.DataValue>
@@ -105,7 +105,7 @@ export function ProductDetail() {
 
             <S.DataSheetLine>
               <S.DataKey>
-                <S.DataTextTitle>Publicação</S.DataTextTitle>
+                <S.DataTextTitle>Publish year</S.DataTextTitle>
               </S.DataKey>
 
               <S.DataValue>
@@ -115,7 +115,7 @@ export function ProductDetail() {
 
             <S.DataSheetLine>
               <S.DataKey>
-                <S.DataTextTitle>Idioma</S.DataTextTitle>
+                <S.DataTextTitle>Language</S.DataTextTitle>
               </S.DataKey>
 
               <S.DataValue>
@@ -125,7 +125,7 @@ export function ProductDetail() {
 
             <S.DataSheetLine>
               <S.DataKey>
-                <S.DataTextTitle>Código de barras</S.DataTextTitle>
+                <S.DataTextTitle>ISBN</S.DataTextTitle>
               </S.DataKey>
 
               <S.DataValue>
@@ -135,7 +135,7 @@ export function ProductDetail() {
 
             <S.DataSheetLine>
               <S.DataKey>
-                <S.DataTextTitle>Fabricante</S.DataTextTitle>
+                <S.DataTextTitle>Publisher</S.DataTextTitle>
               </S.DataKey>
 
               <S.DataValue>
@@ -147,7 +147,7 @@ export function ProductDetail() {
 
             <S.DataSheetLine>
               <S.DataKey>
-                <S.DataTextTitle>Dimensões do produto</S.DataTextTitle>
+                <S.DataTextTitle>Dimensions</S.DataTextTitle>
               </S.DataKey>
 
               <S.DataValue>

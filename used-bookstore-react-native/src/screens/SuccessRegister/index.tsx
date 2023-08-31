@@ -24,11 +24,11 @@ export function SuccessRegister() {
             }}
           />
 
-          <S.Title>Cadastro efetuado com sucesso!</S.Title>
-          <S.Description>Continue navegando em nosso APP!</S.Description>
+          <S.Title>Registration completed successfully!</S.Title>
+          <S.Description>Continue browsing our app</S.Description>
 
           <S.LoginButton onPress={() => navigate("Home")}>
-            <S.LoginButtonText>Voltar para a página inicial</S.LoginButtonText>
+            <S.LoginButtonText>Return to the homepage</S.LoginButtonText>
           </S.LoginButton>
         </S.Content>
 

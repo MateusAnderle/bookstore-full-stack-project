@@ -85,7 +85,7 @@ export const companyInfoTexts = [
   },
   {
     id: 2,
-    info: "Sobre nós",
+    info: "About",
     text: `
     Conheça a trajetória da Americanas na internet e toda a sua história nesses mais de 20 anos de presença no universo online.
     A história da Lojas Americanas começa em 1929, quando um grupo de americanos fundou a loja que buscava atender um público com renda estável e, por isso, contava com preços mais baixos e até um slogan que dizia “Nada além de 2 mil réis”.
@@ -114,7 +114,7 @@ export const companyInfoTexts = [
   },
   {
     id: 3,
-    info: "Entregas e devoluções",
+    info: "Deliveries and Returns",
     text: `
     1. Política de trocas e devoluções
   
@@ -219,7 +219,7 @@ export const companyInfoTexts = [
   },
   {
     id: 4,
-    info: "Termos e condições",
+    info: "Terms and Conditions",
     text: `
     I. Confidencialidade
   
@@ -380,7 +380,7 @@ export const companyInfoTexts = [
   },
   {
     id: 5,
-    info: "Política de Cookies",
+    info: "Cookie Policy",
     text: `
     A presente Política de Cookies descreve de forma simples, transparente e objetiva, a coleta dos seus dados pessoais, através de cookies, durante o acesso aos conteúdos desenvolvidos e/ou providos pela Associação Brasileira Beneficente Aslan (ABBA), em cumprimento às determinações da Lei nº 13.709/2018 também conhecida como Lei Geral de Proteção de Dados Pessoais (LGPD)
   
@@ -437,7 +437,7 @@ export const companyInfoTexts = [
   },
   {
     id: 6,
-    info: "Onde estamos",
+    info: "Location",
     text: `
 Av. Mal. Deodoro da Fonseca, 999
       

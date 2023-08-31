@@ -9,7 +9,7 @@ export function BackButton() {
     <S.Container>
       <S.Button onPress={() => navigation.goBack()}>
         <Ionicons name="arrow-back-circle-outline" size={24} color="black" />
-        <S.Text>Voltar</S.Text>
+        <S.Text>Back</S.Text>
       </S.Button>
     </S.Container>
   );

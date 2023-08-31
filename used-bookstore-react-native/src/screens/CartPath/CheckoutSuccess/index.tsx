@@ -35,11 +35,11 @@ export function CheckoutSuccess() {
             }}
           />
 
-          <S.Title>Sua compra foi efetuada com sucesso!</S.Title>
-          <S.Description>Esperamos que volte mais vezes!</S.Description>
+          <S.Title>Your purchase was successful!</S.Title>
+          <S.Description>We hope you visit us again!</S.Description>
 
           <S.LoginButton onPress={() => navigate("Home")}>
-            <S.LoginButtonText>Voltar para a página inicial</S.LoginButtonText>
+            <S.LoginButtonText>Return to the homepage</S.LoginButtonText>
           </S.LoginButton>
         </S.Content>
 

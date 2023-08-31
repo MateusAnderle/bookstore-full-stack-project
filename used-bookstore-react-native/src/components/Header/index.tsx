@@ -18,11 +18,11 @@ export function Header() {
   const { products } = useContext(CartContext);
   const { token } = useAuth();
   const CategoryList = [
-    "Mais Vendidos",
-    "Lançamentos",
-    "Livros",
-    "Decorações",
-    "Educativo",
+    "Best sellers",
+    "Releases",
+    "Books",
+    "Decorations",
+    "Educational",
   ];
   const {
     control,
@@ -55,7 +55,7 @@ export function Header() {
 
           <S.TitleWrapper>
             <S.Title>Sebus</S.Title>
-            <S.Description>Novos e usados</S.Description>
+            <S.Description>Used bookstore</S.Description>
           </S.TitleWrapper>
         </S.IconsAndTitle>
 
@@ -96,10 +96,10 @@ export function Header() {
           <Controller
             name="search"
             control={control}
-            rules={{ required: "Campo obrigatório" }}
+            rules={{ required: "Required field" }}
             render={({ field: { onChange, value } }) => (
               <S.input
-                placeholder="Pesquise por algum livro"
+                placeholder="Search for a book"
                 placeholderTextColor="#AAA"
                 onChangeText={onChange}
                 value={value}
@@ -107,7 +107,7 @@ export function Header() {
             )}
           />
           <S.SearchButton onPress={handleSubmit(onSubmit)}>
-            <S.ButtonText>Buscar</S.ButtonText>
+            <S.ButtonText>Search</S.ButtonText>
           </S.SearchButton>
         </S.SearchContainer>
       )}

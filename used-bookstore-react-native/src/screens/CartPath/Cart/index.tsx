@@ -39,7 +39,7 @@ export function Cart() {
 
   function goToCheckout() {
     if (!token) {
-      return Alert.alert("Para continuar você precisa estar logado!");
+      return Alert.alert("To continue, you need to be logged in");
     }
     setTotalCartCheckout({
       numberOfItems: itemsCart,
@@ -92,7 +92,7 @@ export function Cart() {
             color="#000"
             style={{ marginRight: 10 }}
           />
-          <S.PageTitle>Carrinho de compras</S.PageTitle>
+          <S.PageTitle>Cart</S.PageTitle>
         </S.HeaderTitle>
 
         <S.Content>
@@ -102,16 +102,16 @@ export function Cart() {
                 <S.BookImage source={{ uri: item.image }} />
                 <S.DescriptionBox>
                   <S.Title>
-                    <S.B>Título:</S.B> {item.livro}
+                    <S.B>Title:</S.B> {item.livro}
                   </S.Title>
                   <S.Author>
-                    <S.B>Autor:</S.B> {item.autor}
+                    <S.B>Author:</S.B> {item.autor}
                   </S.Author>
                   <S.Price>
-                    <S.B>Preço:</S.B>
+                    <S.B>Price:</S.B>
                     {currencyBRL(item.preco)}
                   </S.Price>
-                  <S.QuantDesc>Quantidade: {item.quantidade}</S.QuantDesc>
+                  <S.QuantDesc>Quantity: {item.quantidade}</S.QuantDesc>
 
                   <S.Quantity>
                     <TouchableOpacity onPress={() => subQuantity(item.id)}>
@@ -122,7 +122,7 @@ export function Cart() {
                       />
                     </TouchableOpacity>
 
-                    <S.QuantityTitle>Alterar Quantidade</S.QuantityTitle>
+                    <S.QuantityTitle>Change quantity</S.QuantityTitle>
 
                     <TouchableOpacity onPress={() => addQuantity(item.id)}>
                       <Ionicons
@@ -138,27 +138,27 @@ export function Cart() {
           })}
           {products.length === 0 ? (
             <S.CartTotalBox>
-              <S.B>Carrinho Vazio...</S.B>
-              <S.EmptyMessage>Continue navegando em nosso APP!</S.EmptyMessage>
+              <S.B>Empty cart...</S.B>
+              <S.EmptyMessage>Continue browsing our app!</S.EmptyMessage>
             </S.CartTotalBox>
           ) : (
             <S.CartTotalBox>
               <S.QuantityTotal>
-                <S.TotalTitle>Quantidade total:</S.TotalTitle>
+                <S.TotalTitle>Total amount:</S.TotalTitle>
                 <S.TotalSubtitle>{itemsCart}</S.TotalSubtitle>
               </S.QuantityTotal>
 
               <S.PriceTotal>
-                <S.TotalTitle>Valor da compra:</S.TotalTitle>
+                <S.TotalTitle>Purchase amount:</S.TotalTitle>
                 <S.TotalSubtitle>{currencyBRL(totalCart!)}</S.TotalSubtitle>
               </S.PriceTotal>
 
               <S.DescriptionTotal>
-                Sua compra pode ser parcelada em até 10x sem juros
+              You can pay with a credit card with no interest
               </S.DescriptionTotal>
 
               <S.CartTotalButton onPress={goToCheckout}>
-                <S.CartTotalButtonText>Finalizar Compra</S.CartTotalButtonText>
+                <S.CartTotalButtonText>Complete Purchase</S.CartTotalButtonText>
               </S.CartTotalButton>
             </S.CartTotalBox>
           )}

@@ -120,7 +120,7 @@ export function Categories() {
             }
             ListEmptyComponent={
               <S.EmptyList>
-                Tente novamente ou procure em outra página
+                Please try again or search on another page
               </S.EmptyList>
             }
             numColumns={2}

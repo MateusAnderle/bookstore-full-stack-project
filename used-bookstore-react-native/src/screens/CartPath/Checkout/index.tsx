@@ -32,7 +32,7 @@ interface FetchZipCodeProps {
 }
 
 export function Checkout() {
-  const types = ["Cartão de Crédito", "Boleto", "PIX"];
+  const types = ["Credit card", "Bank slip", "Bank Transfer"];
   const [finalDelivery, setFinalDelivery] = useState({} as FinalDeliveryProps);
   const [fetchZipCode, setFetchZipCode] = useState({} as FetchZipCodeProps);
   const [zip, setZip] = useState("");
@@ -61,7 +61,7 @@ export function Checkout() {
 
   function zipCodePrepare() {
     if (!fetchZipCode) {
-      return Alert.alert("Por favor, preencha os dados acima");
+      return Alert.alert("Please fill in the above information");
     }
 
     const { logradouro, bairro, localidade, uf } = fetchZipCode;
@@ -81,7 +81,7 @@ export function Checkout() {
 
   async function sendToApi() {
     if (!finalDelivery.logradouro) {
-      Alert.alert("Confrime os dados primeiro");
+      Alert.alert("Please confirm the data first");
       return;
     }
 
@@ -94,7 +94,7 @@ export function Checkout() {
 
       navigate("CheckoutSuccess");
     } catch (error) {
-      Alert.alert("Erro ao enviar o seu pedido!");
+      Alert.alert("Checkout error!");
       console.log(error);
     }
   }
@@ -116,29 +116,29 @@ export function Checkout() {
         </S.HeaderTitle>
 
         <S.Content>
-          <S.Title>Olá, Visitante</S.Title>
+          <S.Title>Hello, visitor</S.Title>
 
-          <S.FormTitle>Complete seus dados para entrega</S.FormTitle>
+          <S.FormTitle>Complete your delivery information</S.FormTitle>
           <S.Input
-            placeholder="Digite seu CEP"
+            placeholder="ZIP Code"
             onChangeText={setZip}
             onBlur={fetchApiZipCode}
             placeholderTextColor="#AAA"
             keyboardType="numeric"
           />
           <S.Input
-            placeholder="Digite o número"
+            placeholder="Number"
             onChangeText={setNumber}
             placeholderTextColor="#AAA"
             keyboardType="numeric"
           />
           <S.Input
-            placeholder="Ponto de referência"
+            placeholder="Landmark"
             onChangeText={setReferencePoint}
             placeholderTextColor="#AAA"
           />
 
-          <S.PaymentTitle>Pagamento</S.PaymentTitle>
+          <S.PaymentTitle>Payment</S.PaymentTitle>
 
           <S.PaymentButtonWrapper>
             {types.map((type) => (
@@ -153,55 +153,55 @@ export function Checkout() {
           </S.PaymentButtonWrapper>
 
           <S.ConfirmForm onPress={zipCodePrepare}>
-            <S.ConfirmButtonText>Confirmar dados</S.ConfirmButtonText>
+            <S.ConfirmButtonText>Confirm information</S.ConfirmButtonText>
           </S.ConfirmForm>
         </S.Content>
 
         <S.Content style={{ marginTop: 10 }}>
-          <S.OrderTitle>Resumo do pedido</S.OrderTitle>
+          <S.OrderTitle>Order summary</S.OrderTitle>
 
-          <S.SubtitleOrder>Produtos</S.SubtitleOrder>
+          <S.SubtitleOrder>Products</S.SubtitleOrder>
           <S.DescriptionOrder>
-            Quantidade de itens: {totalCartCheckout.numberOfItems}
+            Items amount: {totalCartCheckout.numberOfItems}
           </S.DescriptionOrder>
           <S.DescriptionOrder>
-            Valor total dos produtos:{" "}
+          Total value of products:{" "}
             {currencyBRL(totalCartCheckout?.totalPriceCart!)}
           </S.DescriptionOrder>
 
           {finalDelivery.logradouro && (
             <>
-              <S.SubtitleOrder>Entrega</S.SubtitleOrder>
+              <S.SubtitleOrder>Delivery</S.SubtitleOrder>
               <S.DescriptionOrder>
-                Logradouro: {finalDelivery.logradouro}, {finalDelivery.number}
+              Street address: {finalDelivery.logradouro}, {finalDelivery.number}
               </S.DescriptionOrder>
               <S.DescriptionOrder>
-                Bairro: {finalDelivery.bairro} - {finalDelivery.localidade},{" "}
+                Neighborhood: {finalDelivery.bairro} - {finalDelivery.localidade},{" "}
                 {finalDelivery.uf}
               </S.DescriptionOrder>
               <S.DescriptionOrder>
-                Referência: {finalDelivery.referencePoint}
+                Landmark: {finalDelivery.referencePoint}
               </S.DescriptionOrder>
               <S.DescriptionOrder>
-                Prazo de entrega estimado: {finalDelivery.prazo} dias
+              Estimated delivery time: {finalDelivery.prazo} days
               </S.DescriptionOrder>
               <S.DescriptionOrder>
-                Valor do frete: {currencyBRL(finalDelivery?.valorFrete)}
+              Shipping cost: {currencyBRL(finalDelivery?.valorFrete)}
               </S.DescriptionOrder>
 
-              <S.SubtitleOrder>Pagamento</S.SubtitleOrder>
+              <S.SubtitleOrder>Payment</S.SubtitleOrder>
               <S.DescriptionOrder>
-                Método de pagamento: Boleto Bancário
+                Payment method: Bank transfer
               </S.DescriptionOrder>
 
               <S.OrderTitle style={{ marginTop: 20 }}>
-                Total do pedido: {currencyBRL(totalCheckout)}
+                Total order amount: {currencyBRL(totalCheckout)}
               </S.OrderTitle>
             </>
           )}
 
           <S.CheckouButton onPress={sendToApi}>
-            <S.CheckouButtonText>Finalizar Compra</S.CheckouButtonText>
+            <S.CheckouButtonText>Complete Purchase</S.CheckouButtonText>
           </S.CheckouButton>
         </S.Content>
         <Footer />

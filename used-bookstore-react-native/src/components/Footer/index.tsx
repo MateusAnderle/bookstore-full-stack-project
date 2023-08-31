@@ -7,16 +7,16 @@ export function Footer() {
 
   const companyInfoList = [
     { id: 1, type: "FAQ" },
-    { id: 2, type: "Sobre nós" },
-    { id: 3, type: "Onde estamos" },
-    { id: 4, type: "Entregas e devoluções" },
-    { id: 5, type: "Termos e condições" },
-    { id: 6, type: "Política de Cookies" },
+    { id: 2, type: "About" },
+    { id: 3, type: "Location" },
+    { id: 4, type: "Deliveries and Returns" },
+    { id: 5, type: "Terms and Conditions" },
+    { id: 6, type: "Cookie Policy" },
   ];
 
   return (
     <S.Container>
-      <S.Title>Informações</S.Title>
+      <S.Title>Information</S.Title>
       {companyInfoList.map((item) => {
         return (
           <S.DB
@@ -30,12 +30,12 @@ export function Footer() {
 
       <S.Spacer />
 
-      <S.Title>Contato</S.Title>
+      <S.Title>Contact</S.Title>
 
       <S.Phone>(47) 3370-9999</S.Phone>
 
       <S.Description>Av. Marechal Deodoro da Fonseca</S.Description>
-      <S.Description>Centro, Jaraguá do Sul</S.Description>
+      <S.Description>Jaraguá do Sul</S.Description>
       <S.Description>CNPJ: 08.999.999/0001-50</S.Description>
 
       <S.IconsBox>
@@ -45,7 +45,7 @@ export function Footer() {
         <FontAwesome5 name="youtube" size={30} color={"#FFF"} />
       </S.IconsBox>
 
-      <S.Description>Feito por @matsanderle - 2022.</S.Description>
+      <S.Description>Made by @matsanderle - 2023.</S.Description>
     </S.Container>
   );
 }

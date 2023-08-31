@@ -97,7 +97,7 @@ export function SearchList() {
       <BackButton />
 
       <S.Content>
-        <S.Title>Exibindo resultados para "{search}"</S.Title>
+        <S.Title>Displaying results for: "{search}"</S.Title>
 
         {isLoading ? (
           <ActivityIndicator
@@ -132,7 +132,7 @@ export function SearchList() {
             }
             ListEmptyComponent={
               <S.EmptyList>
-                Tente novamente ou procure em outra página
+                Please try again or search on another page
               </S.EmptyList>
             }
             numColumns={2}

@@ -48,7 +48,7 @@ export function Register() {
 
   const onSubmit = async (data: RegistrationFormProps) => {
     if (data.password !== data.repeatPassword) {
-      return setPasswordEqual("As senhas devem ser iguais");
+      return setPasswordEqual("Passwords must match");
     }
     setPasswordEqual("");
 
@@ -68,7 +68,7 @@ export function Register() {
 
       navigate("SuccessRegister");
     } catch (error) {
-      Alert.alert("Erro ao enviar o seu cadastro!");
+      Alert.alert("Register error!");
       console.log(error);
     }
   };
@@ -124,10 +124,10 @@ export function Register() {
           <Controller
             name="name"
             control={control}
-            rules={{ required: "Nome obrigatório" }}
+            rules={{ required: "Name is required" }}
             render={({ field: { onChange, value } }) => (
               <S.Input
-                placeholder="Digite seu nome completo"
+                placeholder="Name"
                 placeholderTextColor="#AAA"
                 onChangeText={onChange}
                 value={value}
@@ -144,20 +144,20 @@ export function Register() {
             name="zipCode"
             control={control}
             rules={{
-              required: "CEP obrigatório",
+              required: "ZIP Code is required",
               onBlur: fetchZipCode,
               minLength: {
                 value: 8,
-                message: "Digite no mínimo 8 números",
+                message: "Please enter at least 8 digits",
               },
               maxLength: {
                 value: 8,
-                message: "Digite no máximo 8 números",
+                message: "Please enter a maximum of 8 digits",
               },
             }}
             render={({ field: { onChange, value, onBlur } }) => (
               <S.Input
-                placeholder="Digite aqui seu CEP"
+                placeholder="ZIP CODE"
                 placeholderTextColor="#AAA"
                 keyboardType="numeric"
                 onChangeText={onChange}
@@ -176,19 +176,19 @@ export function Register() {
             name="phone"
             control={control}
             rules={{
-              required: "Telefone obrigatório",
+              required: "Phone is required",
               minLength: {
                 value: 10,
-                message: "Digite no mínimo 10 números",
+                message: "Please enter at least 10 digits",
               },
               maxLength: {
                 value: 11,
-                message: "Digite no máximo 11 números",
+                message: "Please enter a maximum of 11 digits",
               },
             }}
             render={({ field: { onChange, value } }) => (
               <S.Input
-                placeholder="Digite aqui seu telefone"
+                placeholder="Phone"
                 placeholderTextColor="#AAA"
                 keyboardType="numeric"
                 onChangeText={onChange}
@@ -206,10 +206,10 @@ export function Register() {
           <Controller
             name="address"
             control={control}
-            rules={{ required: "Endereço obrigatório" }}
+            rules={{ required: "Address is required" }}
             render={({ field: { onChange, value } }) => (
               <S.Input
-                placeholder="Digite aqui seu endereço"
+                placeholder="Address"
                 placeholderTextColor="#AAA"
                 onChangeText={onChange}
                 value={value}
@@ -226,10 +226,10 @@ export function Register() {
           <Controller
             name="district"
             control={control}
-            rules={{ required: "Bairro obrigatório" }}
+            rules={{ required: "Neighborhood is required" }}
             render={({ field: { onChange, value } }) => (
               <S.Input
-                placeholder="Digite aqui seu bairro"
+                placeholder="Neighborhood"
                 placeholderTextColor="#AAA"
                 onChangeText={onChange}
                 value={value}
@@ -245,10 +245,10 @@ export function Register() {
           <Controller
             name="city"
             control={control}
-            rules={{ required: "Cidade obrigatória" }}
+            rules={{ required: "City is required" }}
             render={({ field: { onChange, value } }) => (
               <S.Input
-                placeholder="Digite aqui sua cidade"
+                placeholder="City"
                 placeholderTextColor="#AAA"
                 onChangeText={onChange}
                 value={value}
@@ -265,20 +265,20 @@ export function Register() {
             name="cpf"
             control={control}
             rules={{
-              required: "CPF obrigatório",
+              required: "CPF is required",
               onBlur: checkCpf,
               minLength: {
                 value: 11,
-                message: "Digite no mínimo 11 números",
+                message: "Please enter at least 11 digits",
               },
               maxLength: {
                 value: 11,
-                message: "Digite no máximo 11 números",
+                message: "Please enter a maximum of 11 digits",
               },
             }}
             render={({ field: { onChange, value, onBlur } }) => (
               <S.Input
-                placeholder="Digite aqui seu CPF"
+                placeholder="CPF"
                 placeholderTextColor="#AAA"
                 keyboardType="numeric"
                 onChangeText={onChange}
@@ -301,10 +301,10 @@ export function Register() {
           <Controller
             name="email"
             control={control}
-            rules={{ required: "E-mail obrigatório" }}
+            rules={{ required: "E-mail is required" }}
             render={({ field: { onChange, value } }) => (
               <S.Input
-                placeholder="Digite aqui seu e-mail"
+                placeholder="E-mail"
                 placeholderTextColor="#AAA"
                 onChangeText={onChange}
                 value={value}
@@ -321,15 +321,15 @@ export function Register() {
             name="password"
             control={control}
             rules={{
-              required: "Campo obrigatório",
+              required: "Required field",
               minLength: {
                 value: 6,
-                message: "No mínimo 6 dígitos",
+                message: "Please enter at least 6 digits",
               },
             }}
             render={({ field: { onChange, value } }) => (
               <S.Input
-                placeholder="Crie uma senha"
+                placeholder="New password"
                 placeholderTextColor="#AAA"
                 secureTextEntry={true}
                 onChangeText={onChange}
@@ -347,15 +347,15 @@ export function Register() {
             name="repeatPassword"
             control={control}
             rules={{
-              required: "Campo obrigatório",
+              required: "Required field",
               minLength: {
                 value: 6,
-                message: "No mínimo 6 dígitos",
+                message: "Please enter at least 6 digits",
               },
             }}
             render={({ field: { onChange, value } }) => (
               <S.Input
-                placeholder="Repita a senha"
+                placeholder="Repeat previous password"
                 placeholderTextColor="#AAA"
                 secureTextEntry={true}
                 onChangeText={onChange}
@@ -379,7 +379,7 @@ export function Register() {
             onPress={handleSubmit(onSubmit)}
             disabled={!!registeredCpf}
           >
-            <S.LoginButtonText>Cadastrar</S.LoginButtonText>
+            <S.LoginButtonText>Register</S.LoginButtonText>
           </S.LoginButton>
         </S.Content>
 

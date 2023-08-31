@@ -19,7 +19,7 @@ export default function Pagination({
       >
         <Text style={{ color: "#fff" }}>«</Text>
       </S.NextPrev>
-      <S.PageCounter>Página {pageNumber}</S.PageCounter>
+      <S.PageCounter>Page {pageNumber}</S.PageCounter>
       <S.NextPrev
         style={{ borderTopRightRadius: 20, borderBottomRightRadius: 20 }}
         onPress={nextClick}

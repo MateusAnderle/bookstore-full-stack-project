@@ -18,7 +18,7 @@ export function CompanyInfo() {
         <S.Title>{infoTitle}</S.Title>
         <S.Text>
           {infoResponse === undefined
-            ? "Ocorreu algum erro!"
+            ? "An error occurred!"
             : infoResponse.text}
         </S.Text>
         <Footer />

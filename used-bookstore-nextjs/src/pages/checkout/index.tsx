@@ -182,7 +182,7 @@ export default function Checkout() {
               <p>Reference point: {finalDelivery.referencePoint}</p>
 
               <p>
-              Estimated delivery time: <b>{finalDelivery.prazo} dias</b>
+              Estimated delivery time: <b>{finalDelivery.prazo} days</b>
               </p>
               <p>
               Shipping cost: <b>{currencyBRL(finalDelivery?.valorFrete)}</b>

@@ -59,7 +59,7 @@ const AuthProvider = ({ children }: AuthProviderProps) => {
         setToken(accessToken);
         setUserData(userId);
       } catch (error) {
-        Alert.alert("Senha incorreta");
+        Alert.alert("Invalid username or password");
         console.log(error);
       }
       setIsLoading(false);

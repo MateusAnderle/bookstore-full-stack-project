@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Header } from "../../components/Header";
 import * as S from "./styles";
 import Banner from "../../assets/capa.png";
@@ -31,8 +31,8 @@ export function Home() {
   const [skip, setSkip] = useState(0);
   const take = 10;
 
-  const bestSellerCategory = "Mais vendidos";
-  const newReleaseCategory = "Lançamentos";
+  const bestSellerCategory = "Best sellers";
+  const newReleaseCategory = "Releases";
 
   const { isLoading: isLoadingBest, data: bestSeller } = useQuery({
     queryKey: ["books-home-best", page],
@@ -69,13 +69,13 @@ export function Home() {
           <>
             {bestSeller && (
               <BooksListCategory
-                title="Mais vendidos"
+                title="Best sellers"
                 category={bestSeller?.data?.categories}
               />
             )}
             {newReleases && (
               <BooksListCategory
-                title="Lançamentos"
+                title="Releases"
                 category={newReleases?.data?.categories}
               />
             )}
