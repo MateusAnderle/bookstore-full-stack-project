@@ -38,7 +38,7 @@ export default function Header() {
             <Books />
             <div>
               <h1>Sebus</h1>
-              <span>Livraria de Novos e Usados</span>
+              <span>Used bookstore</span>
             </div>
           </LogoWrapper>
         </Link>
@@ -47,11 +47,11 @@ export default function Header() {
           <form onSubmit={handleSubmit(onSubmit)}>
             <input
               type="text"
-              placeholder="Digite o nome do produto que deseja encontrar..."
+              placeholder="Enter the name of the product you want to find..."
               {...register("search", { required: true })}
             />
 
-            <input type="submit" value="Buscar" />
+            <input type="submit" value="Search" />
           </form>
 
           {token ? (
@@ -75,20 +75,20 @@ export default function Header() {
 
       <NavContainer>
         <NavHeader>
-          <Link href={`/categoryList/${"Mais Vendidos"}`}>
-            <li>Mais Vendidos</li>
+          <Link href={`/categoryList/${"Best sellers"}`}>
+            <li>Best sellers</li>
           </Link>
-          <Link href={`/categoryList/${"Lançamentos"}`}>
-            <li>Lançamentos</li>
+          <Link href={`/categoryList/${"Releases"}`}>
+            <li>Releases</li>
           </Link>
-          <Link href={`/categoryList/${"Livros"}`}>
-            <li>Livros</li>
+          <Link href={`/categoryList/${"Books"}`}>
+            <li>Books</li>
           </Link>
-          <Link href={`/categoryList/${"Decorações"}`}>
-            <li>Decorações</li>
+          <Link href={`/categoryList/${"Decorations"}`}>
+            <li>Decorations</li>
           </Link>
-          <Link href={`/categoryList/${"Educativo"}`}>
-            <li>Educativo</li>
+          <Link href={`/categoryList/${"Educational"}`}>
+            <li>Educational</li>
           </Link>
         </NavHeader>
       </NavContainer>

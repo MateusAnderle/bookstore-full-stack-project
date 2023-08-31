@@ -18,7 +18,7 @@ export default function CompanyInfo() {
       <InfoContent>
         <h2>{infoRoute}</h2>
         <div>
-          <ReactMarkdown>{textFiltered}</ReactMarkdown>
+          <ReactMarkdown>{textFiltered.toString()}</ReactMarkdown>
         </div>
       </InfoContent>
     </CentralizeInfoContainer>

@@ -7,7 +7,7 @@ import {
 } from "../../styles/pages/login";
 import { useForm } from "react-hook-form";
 import Image from "next/image";
-import LoginImage from "../../assets/loginImage.png";
+import LoginImage from "../../assets/login.png";
 import Link from "next/link";
 import { useAuth } from "../../hooks/auth";
 import { useRouter } from "next/router";
@@ -38,7 +38,7 @@ export default function Login() {
     const { login, password } = data;
     try {
       await signIn({ login, password });
-      return toast.success("Login feito com sucesso!");
+      return toast.success("Login successful!");
     } catch (error) {
       console.log(error);
     }
@@ -71,13 +71,13 @@ export default function Login() {
           <form onSubmit={handleSubmit(onSubmit)}>
             <TextInput
               type="email"
-              placeholder="Digite seu login ou e-mail"
+              placeholder="E-mail"
               {...register("login", { required: true })}
             />
 
             <TextInput
               type="password"
-              placeholder="Digite sua senha"
+              placeholder="Password"
               {...register("password", { required: true })}
             />
 
@@ -88,8 +88,8 @@ export default function Login() {
           </form>
 
           <span>
-            Ainda não tem cadastro?{" "}
-            <Link href="/registration">Clique aqui!</Link>
+          Not registered yet?{" "}
+            <Link href="/registration">Click here!</Link>
           </span>
         </LoginContent>
       </LoginContainer>

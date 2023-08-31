@@ -55,7 +55,7 @@ export default function Home() {
         ) : (
           <>
             <BooksList
-              title="Os mais vendidos"
+              title="Best sellers"
               bookData={query?.data?.products}
             />
             {query?.data?.pages >= 2 && (

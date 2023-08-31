@@ -84,9 +84,9 @@ export default function CategoryList() {
           <>
             <BooksList
               title={(category as string) || "Sebus"}
-              bookData={data!.categories}
+              bookData={data?.categories || []}
             />
-            {data!.pages >= 2 && (
+            { data && data?.pages >= 2 && (
               <Pagination
                 pageNumber={page}
                 previousClick={previousClick}

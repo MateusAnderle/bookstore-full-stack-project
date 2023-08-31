@@ -4,7 +4,7 @@ import {
   CentralizeContainerRegistrationSuccess,
   RegistrationContainerSuccess,
 } from "../../styles/pages/registrationSuccess";
-import SucessoImage from "../../assets/sucesso.png";
+import SuccessImage from "../../assets/congratulations.png";
 import Image from "next/image";
 
 export default function RegistrationSuccess() {
@@ -14,10 +14,10 @@ export default function RegistrationSuccess() {
         <Head>
           <title>Sebus</title>
         </Head>
-        <Image src={SucessoImage} width={360} alt="" unoptimized={true}/>
-        <h2>Cadastro efetuado com sucesso!</h2>
+        <Image src={SuccessImage} width={360} alt="" unoptimized={true}/>
+        <h2>Registration completed successfully!</h2>
         <Link href={`/`}>
-          <p>Continue navegando em nosso site!</p>
+          <p>Keep browsing!</p>
         </Link>
       </RegistrationContainerSuccess>
     </CentralizeContainerRegistrationSuccess>

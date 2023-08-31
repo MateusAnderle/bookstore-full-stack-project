@@ -44,7 +44,7 @@ export default function User() {
         },
       });
     } catch (error) {
-      toast.error("Sessão expirada! Por favor refaça seu Login");
+      toast.error("Session expired! Please log in again");
       console.log(error);
       setData([]);
       setTimeout(() => {
@@ -100,19 +100,19 @@ export default function User() {
                 <UserIcon size={150} />
               </span>
 
-              <h3>Bem vindo(a)!</h3>
+              <h3>Welcome!</h3>
 
               <Logout>
-                <p>Para sair da conta, clique aqui:</p>
+                <p>To log out of your account, click here:</p>
                 <button onClick={signOut}>
                   <SignOut size={24} />
-                  Sair
+                  Logout
                 </button>
               </Logout>
             </SideInfo>
 
             <OrdersContent>
-              <h3>Histórico de pedidos:</h3>
+              <h3>Order history:</h3>
 
               {data
                 ? data.map((order: OrderProps) => {
@@ -121,17 +121,17 @@ export default function User() {
                         <ContentOrderBox>
                           <p>
                             <b>
-                              Data da compra: {dateInDMY(order?.created_at)}
+                            Purchase date: {dateInDMY(order?.created_at)}
                             </b>
                           </p>
                           <p>
                             <b>
-                              Hora da compra: {dateInHMS(order?.created_at)}
+                            Purchase time: {dateInHMS(order?.created_at)}
                             </b>
                           </p>
-                          <p>Itens: {order?.orderSummary[0]?.numberOfItems}</p>
+                          <p>Items: {order?.orderSummary[0]?.numberOfItems}</p>
                           <p>
-                            Total da compra:{" "}
+                          Total purchase amount:{" "}
                             {currencyBRL(
                               order?.orderSummary[0]?.totalPriceCart
                             )}
@@ -150,9 +150,9 @@ export default function User() {
       ) : (
         <ForbiddenAccessContainer>
           <ForbiddenAccess>
-            <h2>Você não tem permissão para estar nessa página</h2>
+            <h2>You do not have permission to be on this page</h2>
             <Link href="/" style={{ textDecoration: "none" }}>
-              <span>Voltar à página inicial</span>
+              <span>Return to homepage</span>
             </Link>
           </ForbiddenAccess>
         </ForbiddenAccessContainer>

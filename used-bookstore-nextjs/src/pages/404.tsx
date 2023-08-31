@@ -4,8 +4,8 @@ import { Container404 } from "../styles/pages/404";
 export default function FourOhFour() {
   return (
     <Container404>
-      <h2>404 - Página não encontrada</h2>
-      <Link href="/">Voltar para a página inicial</Link>
+      <h2>404 - Not found</h2>
+      <Link href="/">Return to homepage</Link>
     </Container404>
   );
 }

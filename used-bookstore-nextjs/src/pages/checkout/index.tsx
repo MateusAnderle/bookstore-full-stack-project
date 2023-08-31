@@ -43,7 +43,7 @@ interface FetchZipCodeProps {
 
 export default function Checkout() {
   const router = useRouter();
-  const types = ["Cartão de Crédito", "Boleto Bancário", "PIX (QR Code)"];
+  const types = ["Credit card", "Bank slip", "Bank transfer"];
   const [finalDelivery, setFinalDelivery] = useState({} as FinalDeliveryProps);
   const [fetchZipCode, setFetchZipCode] = useState({} as FetchZipCodeProps);
   const [number, setNumber] = useState<ReferenceValuesProps>();
@@ -95,7 +95,7 @@ export default function Checkout() {
 
       router.push(`/checkoutFinalization`);
     } catch (error) {
-      const notify = () => toast.error("Erro ao enviar o seu pedido!");
+      const notify = () => toast.error("Submitting order error!");
       notify();
       console.log(error);
     }
@@ -118,28 +118,28 @@ export default function Checkout() {
       />
       <CheckoutContainer>
         <DeliveryAndPayment>
-          <h3>Olá, Visitante!</h3>
+          <h3>Hello, visitor!</h3>
           <DeliveryCheckout>
-            <h4>Complete seus dados para entrega</h4>
+            <h4>Complete your delivery information</h4>
             <input
-              placeholder="Digite seu CEP"
+              placeholder="Enter your ZIP code"
               maxLength={8}
               onBlur={fetchApiZipCode}
             />
             <input
               type="number"
-              placeholder="Digite o nº"
+              placeholder="Number"
               onChange={setNumber}
             />
             <input
               type="text"
-              placeholder="Cite algum ponto de referência"
+              placeholder="Reference point"
               onChange={setReferencePoint}
             />
           </DeliveryCheckout>
 
           <PaymentChechout>
-            <h4>Pagamento</h4>
+            <h4>Payment</h4>
             <div>
               {types.map((type) => (
                 <ButtonToggle
@@ -154,52 +154,52 @@ export default function Checkout() {
           </PaymentChechout>
 
           <ConfirmDeliveryPayment>
-            <button onClick={zipCodePrepare}>Confirmar dados</button>
+            <button onClick={zipCodePrepare}>Confirm information</button>
           </ConfirmDeliveryPayment>
         </DeliveryAndPayment>
 
         <CheckoutReview>
-          <h3>Resumo do pedido</h3>
+          <h3>Order summary</h3>
 
-          <h4>Produtos</h4>
-          <p>Quantidade de itens: {totalCartCheckout?.numberOfItems}</p>
+          <h4>Products</h4>
+          <p>Items quantity: {totalCartCheckout?.numberOfItems}</p>
           <p>
-            Valor total do produtos:{" "}
+            Purchase amout:{" "}
             {currencyBRL(totalCartCheckout.totalPriceCart || 0)}
           </p>
 
           {finalDelivery.logradouro && (
             <>
-              <h4>Entrega</h4>
+              <h4>Delivery</h4>
               <p>
-                Logradouro: {finalDelivery.logradouro}, {finalDelivery.number}
+              Street address: {finalDelivery.logradouro}, {finalDelivery.number}
               </p>
               <p>
-                Bairro: {finalDelivery.bairro} - {finalDelivery.localidade},{" "}
+                Neighborhood: {finalDelivery.bairro} - {finalDelivery.localidade},{" "}
                 {finalDelivery.uf}
               </p>
 
-              <p>Referência: {finalDelivery.referencePoint}</p>
+              <p>Reference point: {finalDelivery.referencePoint}</p>
 
               <p>
-                Prazo de entrega estimado: <b>{finalDelivery.prazo} dias</b>
+              Estimated delivery time: <b>{finalDelivery.prazo} dias</b>
               </p>
               <p>
-                Valor do frete: <b>{currencyBRL(finalDelivery?.valorFrete)}</b>
+              Shipping cost: <b>{currencyBRL(finalDelivery?.valorFrete)}</b>
               </p>
 
-              <h4>Pagamento</h4>
+              <h4>Payment</h4>
               <p>
-                Método de pagamento: <b>{finalDelivery.payment}</b>
+                Payment method: <b>{finalDelivery.payment}</b>
               </p>
             </>
           )}
 
           {finalDelivery.logradouro && (
-            <h2>Total do pedido: {currencyBRL(totalCheckout)}</h2>
+            <h2>Total order amount: {currencyBRL(totalCheckout)}</h2>
           )}
 
-          <button onClick={sendToApi}>Ir para o site de pagamento</button>
+          <button onClick={sendToApi}>Go to the payment website</button>
         </CheckoutReview>
       </CheckoutContainer>
     </CentralizeCheckoutContainer>

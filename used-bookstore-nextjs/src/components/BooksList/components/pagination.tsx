@@ -20,7 +20,7 @@ export default function Pagination({
       <NextPrev variant="prev" onClick={previousClick}>
         «
       </NextPrev>
-      <PageCounter>Página {pageNumber}</PageCounter>
+      <PageCounter>Page {pageNumber}</PageCounter>
       <NextPrev variant="next" onClick={nextClick}>
         »
       </NextPrev>

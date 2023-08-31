@@ -24,12 +24,11 @@ export default function CheckoutFinalization() {
     <CentralizeCheckoutFinalization>
       <CheckoutFinalizationContainer>
         <CheckoutFinalizationContent>
-          <h2>Parabéns!</h2>
+          <h2>Congratulations!</h2>
           <p>
-            Sua compra foi concluída com sucesso! Esperamos que volte mais
-            vezes!
+          Your purchase has been successfully completed! We hope you come back again!
           </p>
-          <Link href="/">Voltar para a página inicial</Link>
+          <Link href="/">Return to the homepage</Link>
         </CheckoutFinalizationContent>
       </CheckoutFinalizationContainer>
     </CentralizeCheckoutFinalization>

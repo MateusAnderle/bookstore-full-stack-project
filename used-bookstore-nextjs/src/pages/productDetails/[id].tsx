@@ -77,21 +77,21 @@ export default function ProductDetails() {
   function addToCart() {
     const findEqual = products.find((item) => item.id === data!.id);
     if (findEqual) {
-      const notify = () => toast.error("Produto já existente no carrinho!");
+      const notify = () => toast.error("Product already in cart");
       notify();
       return;
     }
 
     if (data!.quantidade < 1) {
       const notify = () =>
-        toast.error("Não há mais estoque para esse produto!");
+        toast.error("No more stock available for this product");
       notify();
       return;
     }
 
     data!.quantidade = 1;
     addProductCart(data!);
-    const notify = () => toast.success("Produto adicionado ao carrinho!");
+    const notify = () => toast.success("Product added to cart!");
     notify();
   }
 
@@ -139,28 +139,28 @@ export default function ProductDetails() {
                   <ProductDescriptionText variant="synopsis">
                     {data.sinopse}
                   </ProductDescriptionText>
-                  <a href="#">Mais informações</a>
+                  <a href="#">More information</a>
                 </ProductDescriptionTop>
               </ProductImageAndDescription>
 
               <ProductPriceAndCart>
                 <ProductDescriptionText variant="description">
-                  Preço sugerido na editora: {currencyBRL(data?.precoSugerido)}
+                  Publisher&apos;s suggested price: {currencyBRL(data?.precoSugerido)}
                 </ProductDescriptionText>
                 <ProductDescriptionText variant="title">
                   {currencyBRL(data?.preco)}
                 </ProductDescriptionText>
                 <ProductDescriptionText variant="description">
-                  Em 1x no cartão de crédito sem juros
+                Payment on credit card with no interest
                 </ProductDescriptionText>
                 <Separator top={30} bottom={30} />
                 <ProductDescriptionText variant="description">
-                  Calcular tempo de entrega:
+                Calculate delivery time:
                 </ProductDescriptionText>
 
                 <form onSubmit={handleSubmit(onSubmit)}>
                   <input
-                    placeholder="Digite seu CEP"
+                    placeholder="ZIP Code"
                     minLength={8}
                     maxLength={8}
                     {...register("zipCode", { required: true })}
@@ -175,7 +175,7 @@ export default function ProductDetails() {
                   {zipCodeObject.localidade && (
                     <div>
                       <h5 style={{ marginTop: "5px" }}>
-                        <b>Envio para: </b>
+                        <b>Send to: </b>
                       </h5>
                       <p style={{ marginTop: "5px" }}>
                         {" "}
@@ -183,8 +183,7 @@ export default function ProductDetails() {
                       </p>
                       <p style={{ marginTop: "5px" }}>
                         <b>
-                          A entrega para esse endereço costuma demorar de 5 a 10
-                          dias úteis
+                        Delivery to this address usually takes 5 to 10 business days
                         </b>
                       </p>
                     </div>
@@ -193,57 +192,57 @@ export default function ProductDetails() {
 
                 <Separator top={30} bottom={30} />
                 <ProductButton onClick={addToCart} variant="green">
-                  COMPRAR
+                  BUY
                 </ProductButton>
                 <ProductDescriptionText variant="footer">
-                  Este produto é vendido e entregue por Sebus
+                This product is sold and delivered by Sebus
                 </ProductDescriptionText>
               </ProductPriceAndCart>
             </ProductTopContent>
 
             <ProductSynopsis>
-              <h3>Sinopse</h3>
+              <h3>Synopsis</h3>
               <p>{data.sinopse}</p>
             </ProductSynopsis>
 
             <ProductDatasheet>
-              <h3>Ficha técnica</h3>
+              <h3>Technical specifications</h3>
               <table>
                 <tbody>
                   <tr>
-                    <Td variant="key">Livro</Td>
+                    <Td variant="key">Book</Td>
                     <Td variant="value">{data.livro}</Td>
                   </tr>
                   <tr>
-                    <Td variant="key">Autor</Td>
+                    <Td variant="key">Author</Td>
                     <Td variant="value">{data.autor}</Td>
                   </tr>
                   <tr>
-                    <Td variant="key">Gênero</Td>
+                    <Td variant="key">Genre</Td>
                     <Td variant="value">{data.genero}</Td>
                   </tr>
                   <tr>
-                    <Td variant="key">Quantidade em estoque</Td>
+                    <Td variant="key">Quantity</Td>
                     <Td variant="value">{data.quantidade}</Td>
                   </tr>
                   <tr>
-                    <Td variant="key">Data de publicação</Td>
+                    <Td variant="key">Publish year</Td>
                     <Td variant="value">{data.ano}</Td>
                   </tr>
                   <tr>
-                    <Td variant="key">Idioma</Td>
+                    <Td variant="key">Language</Td>
                     <Td variant="value">{data.idioma}</Td>
                   </tr>
                   <tr>
-                    <Td variant="key">Código de barras (ISBN)</Td>
+                    <Td variant="key">(ISBN)</Td>
                     <Td variant="value">{data.isbn}</Td>
                   </tr>
                   <tr>
-                    <Td variant="key">Fabricante</Td>
+                    <Td variant="key">Publisher</Td>
                     <Td variant="value">{data.fabricante}</Td>
                   </tr>
                   <tr>
-                    <Td variant="key">Dimensões do produto</Td>
+                    <Td variant="key">Dimensions</Td>
                     <Td variant="value">{data.dimensoes}</Td>
                   </tr>
                 </tbody>

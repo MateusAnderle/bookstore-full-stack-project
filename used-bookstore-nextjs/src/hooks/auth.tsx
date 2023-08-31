@@ -61,7 +61,7 @@ const AuthProvider = ({ children }: AuthProviderProps) => {
         setToken(accessToken);
         setUserData(userId);
       } catch (error) {
-        toast.error("Senha incorreta");
+        toast.error("Invalid username or password");
         console.log(error);
       }
       setIsLoading(false);

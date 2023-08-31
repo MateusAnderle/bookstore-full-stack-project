@@ -14,20 +14,20 @@ export default function Footer() {
         <div>
           <h3>Menu</h3>
           <ul>
-            <Link href={`/categoryList/${"Mais Vendidos"}`}>
-              <li>Mais Vendidos</li>
+            <Link href={`/categoryList/${"Best sellers"}`}>
+              <li>Best sellers</li>
             </Link>
-            <Link href={`/categoryList/${"Lançamentos"}`}>
-              <li>Lançamentos</li>
+            <Link href={`/categoryList/${"Releases"}`}>
+              <li>Releases</li>
             </Link>
-            <Link href={`/categoryList/${"Livros"}`}>
-              <li>Livros</li>
+            <Link href={`/categoryList/${"Books"}`}>
+              <li>Books</li>
             </Link>
-            <Link href={`/categoryList/${"Decorações"}`}>
-              <li>Decorações</li>
+            <Link href={`/categoryList/${"Decorations"}`}>
+              <li>Decorations</li>
             </Link>
-            <Link href={`/categoryList/${"Educativo"}`}>
-              <li>Educativo</li>
+            <Link href={`/categoryList/${"Educational"}`}>
+              <li>Educational</li>
             </Link>
             <Link href={`/categoryList/${"CD"}`}>
               <li>CD</li>
@@ -35,8 +35,8 @@ export default function Footer() {
             <Link href={`/categoryList/${"DVD"}`}>
               <li>DVD</li>
             </Link>
-            <Link href={`/categoryList/${"Revistas"}`}>
-              <li>Revistas</li>
+            <Link href={`/categoryList/${"Magazines"}`}>
+              <li>Magazines</li>
             </Link>
           </ul>
         </div>
@@ -47,37 +47,37 @@ export default function Footer() {
             <Link href={`/companyInfo/${"FAQ"}`}>
               <li>FAQ</li>
             </Link>
-            <Link href={`/companyInfo/${"Sobre Nós"}`}>
-              <li>Sobre Nós</li>
+            <Link href={`/companyInfo/${"About"}`}>
+              <li>About</li>
             </Link>
             <Link href="/location" style={{ textDecoration: "none" }}>
-              <li>Onde Estamos</li>
+              <li>Location</li>
             </Link>
-            <Link href={`/companyInfo/${"Entregas e Devoluções"}`}>
-              <li>Entregas e Devoluções</li>
+            <Link href={`/companyInfo/${"Deliveries and Returns"}`}>
+              <li>Deliveries and Returns</li>
             </Link>
-            <Link href={`/companyInfo/${"Termos e Condições"}`}>
-              <li>Termos e Condições</li>
+            <Link href={`/companyInfo/${"Terms and Conditions"}`}>
+              <li>Terms and Conditions</li>
             </Link>
-            <Link href={`/companyInfo/${"Política de Cookies"}`}>
-              <li>Política de Coockies</li>
+            <Link href={`/companyInfo/${"Cookie Policy"}`}>
+              <li>Cookie Policy</li>
             </Link>
           </ul>
         </div>
 
         <div>
-          <h3>Contato</h3>
+          <h3>Contact</h3>
           <ul>
             <li style={{ fontWeight: "bold", fontSize: "20px" }}>
-              Fone: (47) 3370-9999
+              Phone: (47) 3370-9999
             </li>
             <li>Av. Marechal Deodoro da Fonseca</li>
-            <li>Centro, Jaraguá do Sul</li>
+            <li>Jaraguá do Sul</li>
             <li>CNPJ: 08.999.999/0001-50</li>
             <li>
               <FacebookLogo /> <InstagramLogo /> <TwitterLogo /> <YoutubeLogo />
             </li>
-            <li>Feito por @matsanderle - 2023.</li>
+            <li>Made by Mateus Anderle da Silva - 2023.</li>
           </ul>
         </div>
       </FooterMenu>

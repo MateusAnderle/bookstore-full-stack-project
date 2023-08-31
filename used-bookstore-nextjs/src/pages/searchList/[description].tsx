@@ -82,7 +82,7 @@ export default function SearchList() {
         ) : (
           <>
             <BooksList
-              title={`Exibindo resultados para: "${searchQuery}"`}
+              title={`Displaying results for: "${searchQuery}"`}
               bookData={data!?.filteredBooks}
             />
             {data!?.pages >= 2 && (

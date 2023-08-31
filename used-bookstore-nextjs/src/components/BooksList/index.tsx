@@ -29,7 +29,7 @@ interface BookListProps {
 }
 
 export default function BooksList({ title, bookData }: BookListProps) {
-  const titleFiltered = title || "Nenhum livro encontrado...";
+  const titleFiltered = title || "No books found...";
 
   return (
     <SectionContainer>
@@ -44,7 +44,7 @@ export default function BooksList({ title, bookData }: BookListProps) {
           </ProductWrapperList>
         </>
       ) : (
-        <Paragraph>Tente novamente ou procure em outra página</Paragraph>
+        <Paragraph>Please try again or search on another page</Paragraph>
       )}
     </SectionContainer>
   );

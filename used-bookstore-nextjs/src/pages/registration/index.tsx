@@ -6,7 +6,7 @@ import {
 } from "../../styles/pages/registration";
 import { useForm } from "react-hook-form";
 import { api, zipCodeApi } from "../../utils/api";
-import RegistroImage from "../../assets/registro.png";
+import RegisterImage from "../../assets/register.png";
 import Image from "next/image";
 import { useState } from "react";
 import { useRouter } from "next/router";
@@ -62,7 +62,7 @@ export default function Registration() {
 
       router.push("/registrationSuccess");
     } catch (error) {
-      const notify = () => toast.error("Erro ao enviar o seu pedido!");
+      const notify = () => toast.error("Submitting order error!");
       notify();
       console.log(error);
     }
@@ -120,7 +120,7 @@ export default function Registration() {
       />
       <RegistrationContainer>
         <Image
-          src={RegistroImage}
+          src={RegisterImage}
           width={400}
           alt=""
           style={{ borderRadius: "10px" }}
@@ -128,11 +128,11 @@ export default function Registration() {
         />
         <Form onSubmit={handleSubmit(onSubmit)}>
           <label>
-            Nome completo:
+            Name:
             <input
               type="text"
-              placeholder="Digite aqui seu nome completo"
-              {...register("name", { required: "Nome obrigatório" })}
+              placeholder="Full name"
+              {...register("name", { required: "Name is required" })}
             />
             {errors.name && (
               <span style={{ color: "#f00", fontStyle: "italic" }}>
@@ -143,20 +143,20 @@ export default function Registration() {
 
           <TwoInputsContainer>
             <label>
-              CEP (apenas números):
+              ZIP CODE (only numbers):
               <input
                 type="number"
-                placeholder="Digite aqui seu CEP"
+                placeholder="ZIP CODE"
                 {...register("zipCode", {
-                  required: "CEP obrigatório",
+                  required: "ZIP Code is required",
                   onBlur: fetchZipCode,
                   minLength: {
                     value: 8,
-                    message: "Digite no mínimo 8 números",
+                    message: "Please enter at least 8 digits",
                   },
                   maxLength: {
                     value: 8,
-                    message: "Digite no máximo 8 números",
+                    message: "Please enter a maximum of 8 digits",
                   },
                 })}
               />
@@ -168,19 +168,19 @@ export default function Registration() {
             </label>
 
             <label>
-              Telefone (com DDD):
+              Phone:
               <input
                 type="number"
-                placeholder="Digite aqui seu telefone"
+                placeholder="Phone"
                 {...register("phone", {
-                  required: "Telefone obrigatório",
+                  required: "Phone is required",
                   minLength: {
                     value: 10,
-                    message: "Digite no mínimo 10 números",
+                    message: "Please enter at least 10 digits",
                   },
                   maxLength: {
                     value: 11,
-                    message: "Digite no máximo 11 números",
+                    message: "Please enter a maximum of 11 digits",
                   },
                 })}
               />
@@ -193,12 +193,12 @@ export default function Registration() {
           </TwoInputsContainer>
 
           <label>
-            Endereço:
+            Address:
             <input
               type="text"
-              placeholder="Digite aqui seu endereço"
+              placeholder="Address"
               {...register("address", {
-                required: "Endereço obrigatório",
+                required: "Address is required",
               })}
             />
             {errors.address && (
@@ -210,12 +210,12 @@ export default function Registration() {
 
           <TwoInputsContainer>
             <label>
-              Bairro:
+              Neighborhood:
               <input
                 type="text"
-                placeholder="Digite aqui seu bairro"
+                placeholder="Neighborhood"
                 {...register("district", {
-                  required: "Bairro obrigatório",
+                  required: "Neighborhood is required",
                 })}
               />
               {errors.district && (
@@ -226,12 +226,12 @@ export default function Registration() {
             </label>
 
             <label>
-              Cidade:
+              City:
               <input
                 type="text"
-                placeholder="Digite aqui sua cidade"
+                placeholder="City"
                 {...register("city", {
-                  required: "Cidade obrigatória",
+                  required: "City is required",
                 })}
               />
               {errors.city && (
@@ -243,19 +243,19 @@ export default function Registration() {
           </TwoInputsContainer>
 
           <label>
-            CPF (apenas números):
+            CPF (only numbers):
             <input
               type="number"
-              placeholder="Digite aqui seu CPF"
+              placeholder="CPF"
               {...register("cpf", {
-                required: "CPF obrigatório",
+                required: "CPF is required",
                 minLength: {
                   value: 11,
-                  message: "Digite no mínimo 11 números",
+                  message: "Please enter at least 11 digits",
                 },
                 maxLength: {
                   value: 11,
-                  message: "Digite no máximo 11 números",
+                  message: "Please enter a maximum of 11 digits",
                 },
                 onChange: checkCpf,
               })}
@@ -276,8 +276,8 @@ export default function Registration() {
             E-mail:
             <input
               type="email"
-              placeholder="Digite aqui seu melhor e-mail"
-              {...register("email", { required: "E-mail obrigatório" })}
+              placeholder="E-mail"
+              {...register("email", { required: "E-mail is required" })}
             />
             {errors.email && (
               <span style={{ color: "#f00", fontStyle: "italic" }}>
@@ -288,15 +288,15 @@ export default function Registration() {
 
           <TwoInputsContainer>
             <label>
-              Crie uma senha:
+              Create a password:
               <input
                 type="password"
-                placeholder="Nova senha"
+                placeholder="New password"
                 {...register("password", {
-                  required: "Campo obrigatório",
+                  required: "Required field",
                   minLength: {
                     value: 6,
-                    message: "No mínimo 6 dígitos",
+                    message: "Please enter at least 6 digits",
                   },
                   onChange: setPassword,
                 })}
@@ -309,15 +309,15 @@ export default function Registration() {
             </label>
 
             <label>
-              Repita a senha:
+            Repeat the password:
               <input
                 type="password"
-                placeholder="Repita a senha anterior"
+                placeholder="Repeat previous password"
                 {...register("repeatPassword", {
-                  required: "Campo obrigatório",
+                  required: "Required field",
                   minLength: {
                     value: 6,
-                    message: "No mínimo 6 dígitos",
+                    message: "Please enter at least 6 digits",
                   },
                   onChange: setNewPassword,
                 })}
@@ -334,13 +334,13 @@ export default function Registration() {
             <span style={{ color: "#f00", fontStyle: "italic" }}>
               {password.target.value === newPassword.target.value
                 ? null
-                : "As senhas devem ser iguais"}
+                : "Passwords must match"}
             </span>
           )}
 
           <input
             type="submit"
-            value="Cadastrar"
+            value="Register"
             disabled={!!registeredCpf}
             style={{ cursor: registeredCpf ? "not-allowed" : "pointer" }}
           />

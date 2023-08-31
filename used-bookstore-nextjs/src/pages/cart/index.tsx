@@ -44,7 +44,7 @@ export default function Cart() {
           },
         });
       } catch (error) {
-        toast.error("Sessão expirada! Por favor refaça seu Login");
+        toast.error("Session expired! Please log in again");
         console.log(error);
         setTimeout(() => {
           signOut();
@@ -55,25 +55,25 @@ export default function Cart() {
 
   function removeProduct(productId: string) {
     removeProductCart(productId);
-    const notify = () => toast.warn("Produto removido do carrinho!");
+    const notify = () => toast.warn("Product removed from cart");
     notify();
   }
 
   function addProduct(productId: string) {
     addQuantity(productId);
-    const notify = () => toast.success("Produto somado!");
+    const notify = () => toast.success("Product added");
     notify();
   }
 
   function subProduct(productId: string) {
     subQuantity(productId);
-    const notify = () => toast.warn("Produto subtraído!");
+    const notify = () => toast.warn("Product removed");
     notify();
   }
 
   async function goToCheckout() {
     if (!token) {
-      return toast.warn("Para continuar você precisa estar logado!");
+      return toast.warn("To proceed, you need to be logged in");
     }
 
     setTotalCartCheckout({
@@ -137,12 +137,12 @@ export default function Cart() {
             <Table>
               <thead>
                 <tr>
-                  <th>Imagem</th>
-                  <th>Produto</th>
-                  <th>Autor</th>
-                  <th>Quantidade</th>
-                  <th>Preço</th>
-                  <th>Remover</th>
+                  <th>Image</th>
+                  <th>Product</th>
+                  <th>Author</th>
+                  <th>Quantity</th>
+                  <th>Price</th>
+                  <th>Remove</th>
                 </tr>
               </thead>
 
@@ -191,27 +191,27 @@ export default function Cart() {
             <CartTotal>
               <CartContent>
                 <CartInsideBox>
-                  <div>Quantidade total:</div>
+                  <div>Total quantity:</div>
                   <div>{itemsCart}</div>
                 </CartInsideBox>
                 <CartInsideBox>
-                  <div>Valor da compra:</div>
+                  <div>Purchase amount:</div>
                   <div>{currencyBRL(totalCart || 0)}</div>
                 </CartInsideBox>
 
-                <span>Sua compra pode ser parcelada em até 10x sem juros</span>
+                <span>Your purchase can be paid in up to 10 installments without interest</span>
 
                 <CartButton onClick={goToCheckout}>
-                  Inserir dados de entrega
+                Insert delivery information
                 </CartButton>
               </CartContent>
             </CartTotal>
           </>
         ) : (
           <EmptyList>
-            <h3>Carrinho vazio...</h3>
+            <h3>Empty cart...</h3>
             <Link href="/">
-              <span>Continuar navegando</span>
+              <span>Keep browsing</span>
             </Link>
           </EmptyList>
         )}
