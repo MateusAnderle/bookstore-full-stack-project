@@ -3,438 +3,336 @@ export const companyInfoTexts = [
     id: 1,
     info: "FAQ",
     text: `
-### Formas de pagamento aceitas
-Você pode pagar seu pedido das seguintes maneiras:
+Accepted Payment Methods
 
-#### Pagamento à vista
+You can pay for your order in the following ways:
 
-- boleto bancário
+Payment in full
 
-- cartão de crédito
+- Boleto bancário (Bank slip)
+- Credit card
+- Ame digital
 
-- ame digital
+Installment payment
 
-Pagamento parcelado
+- Credit card
 
-- cartão de crédito
+The order will be subject to approval by the credit card administrator.
 
-O pedido estará sujeito à aprovação da administradora de cartão de crédito.
+Sebus Exclusive:
 
-#### Exclusividade Sebus:
+- Payment at physical Sebus stores
 
-- pagamento nas lojas físicas Sebus
+Payment with credit card
+After adding the products to your basket and providing your email and password, you will be directed to the payment screen.
 
-#### Pagamento com cartão de crédito
-Logo após colocar os produtos na cesta e informar seu e-mail e senha, você será direcionado(a) para a tela de pagamento do pedido.
+Select the CREDIT CARD option. Simply click on the logo of your preferred card.
 
-Selecione a opção CARTÃO DE CRÉDITO. Basta clicar sobre a bandeira do cartão de sua preferência.
+Enter the information as it appears on the credit card.
 
-Informe os dados conforme aparecem no cartão de crédito.
+Before completing the purchase, verify the order details, payment method, and delivery address. They cannot be changed after finalization.
 
-Antes de fechar a compra, confira os dados do pedido, a forma de pagamento e o endereço de entrega. Não será possível alterá-los após a finalização.
+This payment method is also available for Televendas (telephone orders).
 
-Essa forma de pagamento também está disponível para compras pelo Televendas.
+To enhance your security further, orders paid with a credit card undergo a verification of registration data.
 
-Para ampliar ainda mais sua segurança, os pedidos pagos com cartão de crédito passam por uma checagem de dados cadastrais.
+If there is any registration discrepancy, Sebus will contact you.
 
-Se houver divergência cadastral, a Sebus entrará em contato com você.
+The delivery time stated on the website will be considered after confirmation of registration data and approval of payment by the administrator, which may take up to 2 (two) business days.
 
-O prazo de entrega informado no site passa a ser considerado após confirmação dos dados cadastrais e aprovação do pagamento pela administradora, o que pode ocorrer em até 2 (dois) dias corridos.
+Orders that exceed the card limit may be declined by the card administrator.
 
-Pedidos que ultrapassem o limite do cartão podem ser recusados pela administradora de cartões.
+Credit cards issued abroad are not accepted.
 
-Não são aceitos cartões de crédito emitidos no exterior.
+Rules for payment with 2 (two) credit cards
+Payment with two credit cards is valid only for orders with a total value above R$ 70.00.
 
-#### Regras para pagamento com 2 (dois) cartões de crédito
+The minimum value for the first credit card varies according to the chosen card's brand.
 
-O pagamento com dois cartões de crédito é válido apenas para pedidos com valor total acima de R$ 70,00.
+The second card's purchase amount is calculated automatically.
 
-O valor mínimo do primeiro cartão de crédito varia de acordo com a bandeira escolhida.
+Different people's cards can be used, but they will be subject to Sebus' analysis and approval.
 
-O valor da compra no segundo cartão é calculado automaticamente.
+Some website promotions are exclusive to certain cards. There may be promotions that do not apply to orders paid with two cards.
 
-Podem ser usados cartões de pessoas diferentes, mas eles serão submetidos à análise e à aprovação da Sebus.
+The other rules are the same as those used for purchases with a single card.
 
-Algumas promoções do site são exclusivas para determinados cartões. Pode haver promoções que não se apliquem a pedidos pagos com dois cartões.
+Payment with bank slip
+After adding the products to your basket and providing your email and password, you will be directed to the payment screen.
 
-As demais regras são idênticas às utilizadas em compras com um único cartão.
+On this screen, click on the BANK SLIP option.
 
-#### Pagamento com boleto bancário
-Logo após colocar os produtos na cesta e informar seu e-mail e senha, você será direcionado(a) para a tela de pagamento do pedido.
+Before completing the purchase, verify the order details, payment method, and delivery address. They cannot be changed after finalization.
 
-Nesta tela, clique sobre a opção BOLETO BANCÁRIO.
+After completing the order, use the "print bank slip" option.
 
-Antes de fechar a compra, confira os dados do pedido, a forma de pagamento e o endereço de entrega. Não será possível alterá-los após a finalização.
+The bank slip is not sent by email (we only send the link to print it) or by mail. Once printed, it can be paid at your preferred bank agency or online, up to the due date on the document. After this date, it becomes invalid and cannot be reprinted.
 
-Após finalizado o pedido, use a opção "imprimir boleto".
+This payment method is also available for Televendas (telephone orders).
 
-O boleto não é enviado por e-mail (apenas enviamos o link para imprimi-lo) ou pelos Correios. Após impresso, pode ser pago na agência bancária de sua preferência ou pela Internet, até a data de vencimento que consta no documento. Após essa data, ele perde a validade e não poderá ser reimpresso.
+Delivery time: After payment of the bank slip, the bank confirms receipt within up to 3 (three) business days. The stated delivery time begins counting only after payment approval and verification of registration data.
 
-Essa forma de pagamento também está disponível para compras pelo Televendas.
+Failure to pay the bank slip by the due date results in its automatic cancellation, and the purchase is canceled without any cost.
 
-#### Prazo de entrega: após o pagamento do boleto, o banco confirma o recebimento em até 3 (três) dias úteis. O prazo de entrega informado começa a contar somente após a aprovação do pagamento e a checagem dos dados cadastrais.
+How to print a second copy of the bank slip within the validity period
 
-O não pagamento do boleto até a data de vencimento implica o cancelamento automático dele e da compra, sem qualquer ônus.
+Access "My Account," locate your order, and use the "Print bank slip" option.
 
-Como imprimir segunda via de boleto bancário dentro da validade
-
-Acesse o "Minha Conta", localize o seu pedido e use a opção "Imprimir boleto".
-
-#### IMPORTANTE: produtos cuja venda seja proibida a menores de 18 anos, como facas, canivetes, armas de caça e de esportes, bebidas alcoólicas e alguns jogos eletrônicosnão podem ser pagos com boleto. Nesse caso, é obrigatória a utilização da modalidade cartão de crédito ou débito em conta, ainda que o pedido inclua outros itens não sujeitos à restrição.
+IMPORTANT: Products whose sale is prohibited to individuals under 18 years of age, such as knives, pocket knives, hunting and sports weapons, alcoholic beverages, and some electronic games, cannot be paid with a bank slip. In this case, the use of credit card or debit card is mandatory, even if the order includes other items not subject to the restriction.
     `,
   },
   {
     id: 2,
     info: "About",
     text: `
-  ### Conheça a trajetória da Sebus na internet e toda a sua história nesses mais de 20 anos de presença no universo online.
-  A história da Lojas Sebus começa em 1929, quando um grupo de americanos fundou a loja que buscava atender um público com renda estável e, por isso, contava com preços mais baixos e até um slogan que dizia “Nada além de 2 mil réis”.
-  
-  Como você já deve imaginar, o negócio deu muito certo! Ele cresceu, evoluiu e foi se adaptando às novas tendências do varejo, até que, em novembro de 1999, começou a vender seus produtos na internet através do site Sebus.com. 
-  
-  ### Mesmo nome, operações diferentes 
-  O lançamento da Sebus.com foi um marco, principalmente pelo alto investimento tecnológico necessário para isso. O site ainda posicionou a marca em um novo ambiente e estabeleceu um meio de interação diferenciado com os consumidores, que, a partir daquele momento, podiam comprar produtos e serviços da Lojas Sebus via internet. 
-  
-  Porém, apesar do nome do site fazer uma associação direta às lojas físicas, a Sebus.com possuía uma operação completamente separada, sendo subsidiária da Lojas Sebus. 
-  
-  ### Fase experimental 
-  O lançamento do site no dia 15 de novembro de 1999 foi marcado por uma fase experimental apenas na cidade de Curitiba, com o objetivo de entender toda a rotina do negócio e os procedimentos operacionais necessários. 
-  
-  Unindo esses aprendizados aos diferenciais competitivos da Lojas Sebus, seria possível elaborar uma estratégia de sucesso na internet a nível nacional. 
-  
-  ### Lançamento nacional 
-  Em fevereiro de 2000, o site foi lançado para todo o Brasil e contava com os produtos vendidos nas lojas físicas mais algumas linhas de maior valor agregado, otimizando o canal de vendas. 
-  
-  Ao final do ano de lançamento, a empresa já contava com 175 mil clientes e era considerada a operadora de comércio eletrônico mais completa do país, com muita variedade e um dos melhores sistemas de entrega. Além disso, ela já somava reconhecimentos como: 
-  
-  - Melhor Site de comércio eletrônico no Brasil(Associação de Mídia Interativa – Prêmio Golden Mouse 2000) 
-  - Melhor Site de comércio eletrônico no Brasil (eBit – Gold Medal 2000) 
-  - Melhor Loja Online no Brasil 2000 (InfoExame – Melhor Site no Brasil 2000) 
-  `,
+The history of Sebus on the internet and its entire journey over more than 20 years of online presence.
+
+The history of Lojas Sebus began in 1929 when a group of Americans founded the store with the aim of catering to a stable-income audience, offering lower prices and even a slogan that said "Nothing over 2,000 réis."
+
+As you can imagine, the business was a great success! It grew, evolved, and adapted to new retail trends until in November 1999, it began selling its products online through the Sebus.com website.
+
+Same name, different operations
+The launch of Sebus.com was a milestone, especially due to the high technological investment required. The website positioned the brand in a new environment and established a unique means of interaction with consumers, who could now purchase products and services from Lojas Sebus via the internet.
+
+However, despite the website's name directly associating it with physical stores, Sebus.com had a completely separate operation, being a subsidiary of Lojas Sebus.
+
+Experimental phase
+The website's launch on November 15, 1999, was marked by an experimental phase only in the city of Curitiba, with the goal of understanding the entire business routine and necessary operational procedures.
+
+Combining these lessons with the competitive advantages of Lojas Sebus would allow for the development of a successful national internet strategy.
+
+National launch
+In February 2000, the website was launched nationwide and featured products sold in physical stores, as well as some higher-value-added product lines, optimizing the sales channel.
+
+By the end of the launch year, the company already had 175,000 customers and was considered the most comprehensive e-commerce operator in the country, with a wide variety of products and one of the best delivery systems. Additionally, it had already received recognition such as:
+
+- Best E-commerce Website in Brazil (Interactive Media Association – Golden Mouse Award 2000)
+
+- Best E-commerce Website in Brazil (eBit – Gold Medal 2000)
+
+- Best Online Store in Brazil 2000 (InfoExame – Best Website in Brazil 2000)
+    `,
   },
   {
     id: 3,
     info: "Deliveries and Returns",
     text: `
-  ### 1. Política de trocas e devoluções
+1. Returns and Exchanges Policy
 
-  Para trocar ou devolver um produto o prazo é de até 7 dias corridos.
-  
-  A exceção são os itens de moda como bolsas, sapatos e roupas, vendidos e entregues pelo Sebus, que podem ser devolvidos em até 30 dias corridos. Ah, como nessa categoria a gente não tem reposição de estoque, preferimos devolver o valor na mesma forma de pagamento da compra. Também podemos enviar um Vale-Compras pra você usar como preferir em nosso site.
-  
-  Para solicitar a troca ou devolução é só entrar em “Minha Conta” e clicar em “Trocar ou Devolver” ou acessar o aplicativo do Sebus. Se preferir, clique aqui e veja os contatos da nossa Central de Atendimento.
-  
-  Mas fique de olho, pois a gente não atende às solicitações sem essa comunicação prévia ou fora do prazo. Além disso, o produto precisa ser devolvido com todos os itens/acessórios que vieram junto com ele.
-  
-  1.2 Troca por defeito
-  
-  Comunicações sobre produtos com defeito devem ser feitas em até 90 dias corridos, se forem bens duráveis (por exemplo, geladeira e ar-condicionado), e 30 dias corridos, se forem bens não duráveis (por exemplo, alimentos e bebidas).
-  
-  Entre em contato com o fornecedor para que ele informe a rede de atendimento credenciada. Clique aqui para ver os telefones.
-  
-  Antes de pedir ajuda, consulte o manual de instruções que acompanha o produto. Ele traz dicas importantes sobre instalação e manutenção, além dos telefones dos postos autorizados.
-  
-  Se o fabricante não corrigir o defeito em até 30 dias corridos, você tem direito a um produto novo, à devolução do valor pago ou a um abatimento no preço que pagou.
-  
-  Por favor, avise a gente se não conseguir uma solução satisfatória.
-  
-  ### 2. Quando recusar o produto
-  
-  A gente envia os produtos exatamente como eles chegam do fabricante. Você deve recusar a entrega e descrever o motivo no verso da Nota Fiscal (Danfe) nos seguintes casos:
-  
-  - embalagem aberta ou avariada, por exemplo, amassada ou molhada;
-  
-  - produto quebrado, amassado, riscado ou danificado;
-  
-  - produto completamente diferente do que você comprou;
-  
-  - faltam peças ou acessórios.
-  
-  Se, por qualquer razão, você não recusar a entrega, tem até 90 dias corridos para entrar em contato com a gente, se forem bens duráveis, e até 30 dias corridos se forem bens não duráveis.
-  
-  É só acessar Minha Conta em nosso site, e clicar em “Trocar ou Devolver”. Você também pode fazer essa comunicação por meio do nosso aplicativo ou da Central de Atendimento. Clique aqui para ver os contatos.
-  
-  ### 3. Como faço pra devolver
-  
-  Você viu que está dentro dos nossos prazos pra troca ou devolução? Pediu a troca pelo Minha Conta ou pelo aplicativo e agora quer saber como fazer pra devolver o produto? É fácil:
-  
-  O produto deve ser devolvido na embalagem original ou similar;
-  Sem indícios de uso, sem violação do lacre original do fabricante;
-  Acompanhado da Nota Fiscal (o Danfe) com o motivo pelo qual está devolvendo escrito atrás da nota;
-  Acompanhado também dos manuais e todas as peças/acessórios que o acompanham.
-  3.1. Devolvendo por postagem nos Correios
-  
-  Se você comprou um produto vendido por um parceiro, a devolução é feita por postagem nos Correios, por isso, pra devolver um produto pelos Correios, é preciso seguir algumas regras:
-  
-  Pesar menos que 30 Kg (produto + embalagem não podem pesar mais que do isso);
-  
-  105cm de altura, 105cm de largura e 105cm de comprimento. As somas totais das dimensões não podem passar os 200cm.
-  
-  A gente te manda um código de postagem gratuito por e-mail, você embala o produto exatamente do jeito que a gente explicou no item 3 e aí é só ir na agência mais próxima pra postar. Fique de olho, esse código tem validade pra ser utilizado, então cuidado não perder o prazo, tá?
-  
-  3.2. Devolvendo por coleta
-  
-  Se você comprou um produto vendido e entregue pelo Sebus, a devolução pode ser feita por postagem nos Correios, exatamente do jeito que a gente explicou no item 3.1, e por coleta, por causa do tamanho (produtos grandes como geladeiras) e da complexidade.
-  
-  Pra coletar um produto, tem que ficar de olho nessas informações:
-  
-  O produto é coletado no mesmo endereço onde foi feita a entrega;
-  As coletas são feitas de segunda-feira a sexta-feira das 08h às 21h;
-  São feitas até três tentativas de coleta;
-  O produto precisa estar embalado conforme as regras descritas no item 3.
-  Ao coletar o produto, o transportador vai entregar um comprovante de que o produto foi coletado. Sempre peça esse comprovante, caso o transportador não o tenha, não entregue o produto.
-  
-  Mas fique de olho, a gente só faz três tentativas pra coletar o produto, mas se não tiver ninguém pra entregar, o processo de coleta é cancelado e você vai precisar fazer o pedido de troca de novo, tá?
-  
-  ### 4. Prazo pra concluir o processo de troca
-  
-  A gente tem o prazo de até 30 dias corridos, contados a partir do recebimento do produto no Centro de Distribuição, pra verificar se a solicitação está dentro da nossa política de trocas e devoluções.
-  
-  Pra caso de produtos comprados de lojas parceiras, no nosso Marketplace, também contamos o prazo de 30 dias corridos a partir do recebimento do produto no estoque deles.
-  
-  ### 5. Devolução do valor pago
-  
-  A gente vai devolver o valor do produto dependendo da forma de pagamento que você escolheu durante a compra. Ou seja, se você pagou com:
-  
-  cartão de crédito: a administradora do cartão recebe a notificação e, então, você vai ser estornado de todo o valor do produto devolvido de uma vez, mesmo que tenha escolhido pagar parcelado.
-  Você pode conferir o reembolso do valor na fatura do cartão, que vai estar como crédito.
-  
-  O prazo do estorno depende da administradora do cartão, mas fica de olho porque geralmente o valor aparece em até duas faturas, geradas depois da sua solicitação de devolução do produto.
-  
-  boleto bancário ou débito em conta: vamos fazer um depósito em até 10 (dez) dias úteis na conta corrente de quem fez a compra, que não pode ser uma conta conjunta.
-  O CPF do titular da conta corrente tem que ser o mesmo que consta lá no pedido, que também é igual ao que está no cadastro da pessoa que comprou.
-  
-  Se quem comprou não tiver uma conta corrente com esses requisitos, vai ser gerada, também em até 10 (dez) dias úteis, uma Ordem de Pagamento no valor do produto em nome de quem fez a compra. Ela vai poder ser resgatada em qualquer agência do Banco Itaú, só precisando apresentar de documento de identidade e CPF. Fique de olho, esse valor fica disponível até 60 dias corridos, então cuidado não perder o prazo, tá?
-  
-  saldo Ame: vai receber o valor em até 15 dias úteis.
-  saldo Ame + cartão: nesse caso, uma parte do reembolso volta pra sua conta Ame e a outra vai pro seu cartão, em até duas faturas.
-  pix: vamos fazer uma transferência via Pix, que acontecerá em até 2h na conta com a chave pix cadastrada.
-  Importante que você saiba que não vamos fazer a devolução do valor se:
-  
-  não houver uma solicitação de troca registrada antes pelo Minha Conta;
-  a solicitação estiver fora do prazo;
-  a gente receber o que você devolveu no Centro de Distribuição do Sebus, analisar e não estiver tudo de acordo com o que você relatou;
-  o produto tenha itens/acessórios que você não devolveu junto com ele.
-  `,
+To exchange or return a product, the deadline is up to 7 consecutive days.
+
+The exception is fashion items such as bags, shoes, and clothing, sold and delivered by Sebus, which can be returned within 30 consecutive days. Since we don't restock items in this category, we prefer to refund the amount in the same payment method used for the purchase. Alternatively, we can provide you with a Gift Voucher to use on our website.
+
+To request an exchange or return, simply go to "My Account" and click on "Exchange or Return," or access the Sebus app. If you prefer, click here to see the contact information for our Customer Service.
+
+Please note that we do not process requests without prior communication or outside the specified timeframe. Additionally, the product must be returned with all the items/accessories that came with it.
+
+1.2 Exchange Due to Defects
+
+Reports of defective products must be made within 90 consecutive days for durable goods (e.g., refrigerators and air conditioners) and within 30 consecutive days for non-durable goods (e.g., food and beverages).
+
+Contact the supplier to have them inform you of the accredited service network. Click here to see the phone numbers.
+
+Before seeking assistance, consult the instruction manual that accompanies the product. It contains important tips on installation and maintenance, as well as contact information for authorized service centers.
+
+If the manufacturer does not fix the defect within 30 consecutive days, you have the right to receive a new product, a refund of the amount paid, or a discount on the price you paid.
+
+Please inform us if you do not achieve a satisfactory solution.
+
+2. When to Refuse the Product
+
+We send products exactly as they arrive from the manufacturer. You should refuse delivery and describe the reason on the back of the Invoice (Danfe) in the following cases:
+
+- Open or damaged packaging, e.g., crushed or wet;
+- Broken, dented, scratched, or damaged product;
+- Product entirely different from what you ordered;
+- Missing parts or accessories.
+
+If, for any reason, you do not refuse delivery, you have up to 90 consecutive days to contact us for durable goods and up to 30 consecutive days for non-durable goods.
+
+Simply access "My Account" on our website and click on "Exchange or Return." You can also make this communication through our app or Customer Service. Click here to see the contact details.
+
+3. How to Return a Product
+
+You have confirmed that you are within our exchange or return deadlines, requested the exchange through "My Account" or the app, and now you want to know how to return the product? It's easy:
+
+- The product must be returned in the original or similar packaging;
+- Without any signs of use, without breaking the manufacturer's original seal;
+- Accompanied by the Invoice (Danfe) with the reason for the return written on the back;
+- Also accompanied by the manuals and all parts/accessories that came with it.
+
+3.1. Returning via Correios (Post Office)
+
+If you purchased a product sold by a partner, the return is done via Correios (Post Office). Therefore, to return a product via Correios, you need to follow some rules:
+
+- It must weigh less than 30 kg (product + packaging cannot weigh more than that);
+- The dimensions should not exceed 105 cm in height, 105 cm in width, and 105 cm in length. The total sum of the dimensions cannot exceed 200 cm.
+
+We will send you a free postage code by email. You will need to package the product exactly as explained in section 3, and then take it to the nearest post office for shipment. Please note that this code has an expiration date, so be careful not to miss the deadline.
+
+3.2. Returning via Collection
+
+If you purchased a product sold and delivered by Sebus, the return can be done via Correios (Post Office), following the instructions provided in section 3.1, or via collection due to the size (e.g., large appliances) and complexity.
+
+To have a product collected, please pay attention to the following information:
+
+- The product is collected at the same address where it was delivered;
+- Collections are made from Monday to Friday from 8 am to 9 pm;
+- Up to three collection attempts will be made;
+- The product must be packaged in accordance with the rules described in section 3.
+
+When the product is collected, the carrier will provide a receipt confirming the collection. Always ask for this receipt, and if the carrier does not have it, do not hand over the product.
+
+Please note that we make only three collection attempts, and if there is no one available to hand over the product, the collection process will be canceled, and you will need to request an exchange again.
+
+4. Timeframe to Complete the Exchange Process
+
+We have a maximum of 30 consecutive days, starting from the product's receipt at the Distribution Center, to verify if the request complies with our exchange and return policy.
+
+For products purchased from partner stores in our Marketplace, we also count a maximum of 30 consecutive days from the receipt of the product in their inventory.
+    `,
   },
   {
     id: 4,
     info: "Terms and Conditions",
     text: `
-  ### I. Confidencialidade
+I. Confidentiality
 
-  1.1. É de responsabilidade do Sebus a preservação da confidencialidade de todos os dados e informações fornecidas pelo Cliente no processo de compra. A segurança do site é auditada diariamente e garantida contra a ação de hackers, por meio do selo "Site Blindado".
-  
-  1.2. O Cliente, por sua vez, se compromete a não disponibilizar suas senhas de acesso aos Websites a terceiros, bem como a tomar providências razoáveis para manter suas informações sob sigilo. Caso o Cliente identifique e/ou desconfie que terceiros tiveram acesso às suas senhas, este se compromete a comunicar o Sebus para que as devidas providências sejam tomadas.
-  
-  1.3. Apenas pessoas físicas maiores de 18 (dezoito) anos poderão se cadastrar e utilizar-se dos serviços prestados pelo Sebus. Reservamo-nos o direito de excluir o cadastro e cancelar pedidos de menores de idades, porém valores pagos por serviços já prestados não serão devolvidos no caso da violação desta regra.
-  
-  1.4. Ao preencher o cadastro, o Cliente declara que as informações que o identificam são verdadeiras, precisas e completas, bem como se declara ciente de que eventuais falsidades poderão sujeitá-lo às responsabilidades criminais e cíveis, de acordo com a legislação brasileira.
-  
-  1.5. O Cliente expressamente autoriza que suas informações e dados pessoais sejam compartilhados pelo Sebus nas seguintes hipóteses:
-  
-  1.5.1. com as demais empresas integrantes do grupo econômico e autoridades, conforme necessário para o processo de compra e o cumprimento da legislação em vigor;
-  
-  1.5.2. com parceiros comerciais, com os quais o Sebus mantém um relacionamento de colaboração ou parceria, a fim de oferecer soluções financeiras e linha de crédito pré-aprovado.
-  
-  ### II. Opiniões, Avaliações e Perguntas dos Clientes Cadastrados
-  
-  2.1. Para melhoria dos serviços e para que os Clientes possam efetuar a melhor escolha de compra, o Cliente poderá postar opiniões, avaliações, comentários e enviar perguntas.
-  
-  2.2. Ao submeter qualquer conteúdo, o Cliente declara e garante que: i) é autor exclusivo e proprietário dos direitos relativos aos conteúdos postados; ii) o conteúdo é seguro e exato; iii) o uso do conteúdo fornecido não viola as políticas do Sebus e não causará danos a qualquer pessoa ou entidade.
-  
-  2.3. O conteúdo postado pelo Cliente não poderá ser falso, impreciso, ilusório, difamatório, acusatório, odioso, racialmente ou religiosamente preconceituoso ou ofensivo, ameaçador, prejudicial a terceiros, ter cunho político, infringir a legislação, violar direitos autorais ou de propriedade intelectual, fazer referência a outros websites, endereços, endereços de e-mail, informações de contato ou números de telefone, e não poderá conter qualquer vírus de computador, worms ou outros arquivos ou programas potencialmente danosos.
-  
-  2.4. O Sebus não assume qualquer responsabilidade quanto ao conteúdo fornecido e postado por seus Clientes. No entanto, é faculdade da Sebus.com a não publicação ou exclusão de qualquer opinião, avaliação, dados, perguntas ou qualquer outro conteúdo que sejam caracterizados como contrários à Lei, aos princípios constitucionais, morais e éticos, bem como os que violem os termos e condições do Sebus, sem que haja direito à devolução de qualquer valor eventualmente pago pelo Cliente.
-  
-  2.5. Autores de comentários ofensivos ou em desacordo com as diretrizes da Companhia poderão ser responsabilizados civil e criminalmente, por conteúdos publicados que violem a Lei e ou produzam lesão a direito de terceiros e ou do Sebus. O Cliente concorda em indenizar a Companhia por todos os danos, perdas, prejuízos e despesas, de qualquer tipo e natureza, decorrentes ou relacionadas a demandas provenientes do conteúdo que o Cliente fornecer.
-  
-  2.6. Para qualquer conteúdo que enviar, o Cliente concede ao Sebus licença e direitos perpétuos, irrevogáveis e livres de royalties para reproduzir, usar, copiar, modificar, excluir em sua totalidade, adaptar, publicar, traduzir, criar trabalhos derivados e/ou vender e/ou distribuir tal conteúdo e/ou incorporá-lo a qualquer forma, meio ou tecnologia em todo o mundo sem remuneração ao Cliente. Todo o conteúdo que o Cliente enviar pode ser usado segundo os critérios do Sebus.
-  
-  2.7. Ao submeter qualquer conteúdo, o Cliente concorda que o Sebus e seus provedores de serviço podem usar seu endereço de e-mail cadastrado para entrar em contato com você a respeito da situação de seu perfil e por outros motivos administrativos.
-  
-  ### III. Serviço de Atendimento ao Cliente (SAC)
-  
-  3.1. O cliente dispõe desse serviço para sanar suas dúvidas, solucionar eventuais solicitações ou reclamações a respeito do seu pedido ou de qualquer conteúdo disponibilizado no Website. O SAC poderá ser acionado por meio de telefone, formulário do website ou envio de e-mail para atendimento.sub@Sebus.com.br, todos disponibilizados em nossa "Central de Atendimento".
-  
-  3.2. Caso o contato com o SAC se refira aos Produtos vendidos e entregues pelos Parceiros do Marketplace, tais Parceiros serão responsáveis por sanar as dúvidas, eventuais solicitações ou reclamações a respeito do seu pedido ou de qualquer conteúdo disponibilizado por ele nos Websites.
-  
-  ### IV. Política de entrega
-  
-  4.1. O prazo para entrega dos Produtos é informado durante o procedimento de compra, sendo contabilizado em dias úteis. As entregas dos Produtos são realizadas de segunda a sexta-feira, das 8h às 22h.Excepcionalmente, algumas entregas de Produtos podem ocorrer aos sábados, domingos e feriados.
-  
-  4.2. A conferência da adequação das dimensões do Produto é de exclusiva responsabilidade do Cliente, que deverá se assegurar de que estão de acordo com os limites espaciais dos elevadores, portas e corredores do local da entrega. Não será realizada a montagem ou desmontagem do Produto, transporte pela escada e/ou portas e janelas, ou içamento das mercadorias.
-  
-  4.3. Serão realizadas até três tentativas de entrega no local informado pelo Cliente, em dias alternados, com intervalo de até 48h entre uma entrega e outra. É indispensável que, no endereço informado, haja uma pessoa autorizada pelo comprador, maior de 18 anos e responsável, portando documento de identificação para receber a mercadoria e assinar o protocolo de entrega. Se houver três tentativas de entrega sem sucesso, o Cliente entende e aceita que o pedido retornará para o Centro de Distribuição do Sebus.
-  
-  4.4. Após a finalização do pedido não é possível alterar a forma de pagamento e/ou o endereço de entrega, solicitar adiantamento ou, ainda, prioridade da entrega.
-  
-  4.5. O prazo de entrega informado durante o procedimento de compra do Produto leva em consideração o estoque, a região, o processo de emissão da nota fiscal e o tempo de preparo do Produto. A cada atualização no status de entrega do pedido, o sistema do Sebus envia, automaticamente, e-mails de alerta para o Cliente.
-  
-  4.6. O valor do frete da entrega é calculado com base no local de entrega, peso e dimensões do Produto.
-  
-  4.7. O Sebus não autoriza a transportadora a:
-  
-  · Entrar no domicílio onde será entregue o Produto;
-  
-  · Entregar o Produto por meios alternativos (exemplo: içar Produto pela janela);
-  
-  · Realizar instalação ou manutenção de Produtos;
-  
-  · Abrir a embalagem do Produto;
-  
-  · Realizar entrega em endereço diferente do que consta no DANFE;
-  
-  · Entregar o Produto para pessoa com menos de 18 anos e/ou sem documento de identificação.
-  
-  4.8. O Sebus não se responsabiliza pela retenção de mercadorias na Secretaria da Fazenda - SEFAZ quando esta se dever exclusivamente a pendências do cliente, sendo, portanto, necessário o comparecimento deste no posto fiscal para que a mercadoria seja devidamente liberada, tendo em vista que nestes casos as informações referentes a liberações e pagamentos só são passadas aos interessados.
-  
-  4.9. As regras dispostas nos itens 4.1 ao 4.8 também são aplicáveis aos Produtos vendidos e entregues pelos Parceiros do Marketplace, exceto naquilo que a política de entrega do Parceiro dispuser expressamente de forma contrária.
-  
-  ### V. Direito de arrependimento
-  
-  5.1. Ao Cliente será facultado o exercício do direito de arrependimento da compra, com a finalidade de devolução do Produto, hipótese na qual deverão ser observadas as seguintes condições:
-  
-  · o prazo de desistência da compra do Produto é de até 7 (sete) dias corridos, a contar da data do recebimento;
-  
-  · o prazo de desistência da compra de produtos da categoria Moda é de até 30 (trinta) dias corridos, a contar da data do recebimento do Produto;
-  
-  · em caso de desistência da compra, o Produto deverá ser devolvido ao Sebus na embalagem original ou similar, acompanhado do DANFE (Documento Auxiliar da Nota Fiscal Eletrônica), do manual e de todos os seus acessórios.
-  
-  5.2. O Cliente deverá solicitar a devolução por meio do Serviço de Atendimento ao Cliente (SAC) ou diretamente no Painel de Controle, no tópico "cancelar pedido". As despesas decorrentes de coleta ou postagem do Produto serão custeadas pelo Sebus ou pelo Parceiro.
-  
-  5.3. Após a chegada do Produto ao Centro de Distribuição, o Sebus verificará se as condições supracitadas foram atendidas. Em caso afirmativo, providenciará a restituição no valor total da compra.
-  
-  5.4. Em compras com cartão de crédito a administradora do cartão será notificada e o estorno ocorrerá na fatura seguinte ou na posterior, de uma só vez, seja qual for o número de parcelas utilizado na compra. O prazo de ressarcimento e, ainda, a cobrança das parcelas remanescentes após o estorno integral do valor do Produto no cartão de crédito do Cliente realizado pelo Sebus, é de exclusiva responsabilidade da administradora do cartão. Na hipótese de cobrança de parcelas futuras pela administradora do cartão, o Cliente não será onerado, uma vez que a Sebus, conforme mencionado acima, realiza o estorno do valor integral do Produto em uma única vez, sendo o crédito referente ao estorno concedido integralmente pela administradora do cartão na fatura de cobrança subsequente ao mês do cancelamento.
-  
-  5.5. Em compras pagas com boleto bancário ou débito em conta, a restituição será efetuada por meio de depósito bancário, em até 10 (dez) dias úteis, somente na conta corrente do(a) comprador(a), que deve ser individual. É necessário que o CPF do titular da conta corrente seja o mesmo que consta no pedido (CPF do Cliente). Caso o(a) comprador(a) não tenha uma conta corrente que atenda às condições citadas, será enviada, no mesmo prazo, uma Ordem de Pagamento em nome do titular da compra. Ela poderá ser resgatada em qualquer agência do Banco Itaú, mediante apresentação de documento de identidade e CPF.
-  
-  5.6. Em compras com vale ou com qualquer outra forma de pagamento é possível receber um Vale no mesmo valor da compra. Em caso de cancelamento do vale, o reembolso será realizado na mesma forma de pagamento escolhida no processo de compra.
-  
-  5.7. O Sebus isenta-se da obrigação de cancelar qualquer Produto que não preencha os requisitos elencados neste dispositivo.
-  
-  ### VI. Política de Trocas e Devoluções
-  
-  6.1. Todas as ocorrências que envolvam troca ou devolução serão atendidas conforme o previsto no Código de Defesa do Consumidor.
-  
-  6.2. O Cliente deverá solicitar a troca ou devolução por meio do Serviço de Atendimento ao Cliente (SAC) ou diretamente no Painel de Controle, no tópico "cancelar pedido". As despesas decorrentes de coleta ou postagem do Produto serão custeadas pelo Sebus ou pelo Parceiro.
-  
-  6.3. O Produto deverá ser devolvido ao Sebus na embalagem original ou similar, acompanhado do DANFE (Documento Auxiliar da Nota Fiscal Eletrônica), do manual e de todos os seus acessórios.
-  
-  6.4. Após a chegada do Produto ao Centro de Distribuição, o Sebus verificará se as condições supracitadas foram atendidas. Em caso afirmativo, providenciará a restituição ou troca do Produto de acordo com a solicitação feita pelo Cliente.
-  
-  6.5. Troca de produtos da categoria Moda: O cliente poderá trocar o tamanho ou a cor dos itens de Moda, ou trocá-los por qualquer produto disponível à venda no site, independentemente da categoria, marca ou coleção. A troca fica condicionada à disponibilidade do Produto em estoque. O prazo para solicitar a troca dos itens de moda, mesmo nos casos em que não há vício ou defeito no Produto, é de 30 dias corridos para produtos vendidos e entregues por Sebus e de 7 dias corridos para produtos vendidos por lojas parceiras, contados a partir da data de entrega.
-  
-  6.6. O Sebus isenta-se da obrigação de atender às solicitações de troca ou devolução de qualquer Produto devolvido sem que o setor de Atendimento ao Cliente seja comunicado, ou nos casos de solicitação direta no Painel de Controle, fora do prazo ou na ausência de itens/acessórios que o acompanham.
-  
-  ### VII. Formas de pagamento aceitas
-  
-  7.1. Pagamento à vista: Ame Digital; Boleto bancário; Débito em conta; Cartão de crédito.
-  
-  7.2. Pagamento parcelado: Ame Digital/Cartão de crédito.
-  
-  7.3. Para pagamentos com cartão de crédito, o pedido estará sujeito à aprovação da administradora do cartão. As informações contidas no cadastro são passíveis de confirmação, que poderá ser solicitada pelo Sebus por e-mail.
-  
-  7.4. O Cliente poderá adquirir o vale após o cancelamento de um pedido feito no site Sebus, ou também ao ser presenteado. O vale terá seu valor convertido em compras no próprio Website.
-  
-  7.5. Para realizar o pagamento com vale, é necessário que o cliente realize o desbloqueio do vale no “painel de controle” antes da sua utilização
-  
-  7.6. O Cliente aceita e reconhece que o vale expira um ano após a data de recebimento e é identificado pelo CPF do comprador, o que impede o uso por terceiros.
-  
-  7.7. Se o valor do vale for menor que o da compra, o Cliente poderá pagar a diferença somente com cartão de crédito. Se o valor do vale for maior que o da compra, o Cliente poderá utilizar a diferença em outras compras no Sebus.
-  
-  ### VIII. Prazos de entrega e Forma de pagamento
-  
-  8.1. Compras pagas com cartão de crédito: o prazo para entrega é considerado a partir da checagem de dados cadastrais e da confirmação do pagamento pela administradora do cartão. A confirmação é realizada em até dois dias corridos, sendo que em caso de divergência cadastral, o Sebus entrará em contato com o comprador.
-  
-  8.2. Compras pagas por meio de boleto bancário: o prazo para entrega é considerado a partir da confirmação do pagamento pelo banco. A confirmação é realizada em até três dias úteis, a partir do pagamento.
-  
-  8.3. Compras pagas por meio de débito em conta: o prazo para entrega é considerado a partir da confirmação do pagamento pelo banco. A confirmação é realizada em até dois dias corridos.
-  
-  8.4. Compras pagas por meio de Vale: se o valor do vale for maior ou igual ao valor da compra, o prazo para entrega é considerado a partir da confirmação do pagamento que ocorre em até 72 horas; se o valor do vale for menor que o valor da compra, a diferença somente poderá ser paga por meio de cartão de crédito, e o prazo de entrega começa a contar após a aprovação do pagamento pela administradora do cartão.
-  
-  ### IX. Ofertas
-  
-  9.1. As ofertas podem ser encontradas na página principal do site do Sebus e na lista de departamentos. Porém, uma oferta pode ser retirada do site quando os Produtos em estoque estiverem esgotados e não for possível efetuar a reposição com nossos fornecedores e/ou Parceiros.
-  
-  9.2. O Cliente deve ler atentamente o regulamento de cada oferta antes de fechar a compra. Em caso de dúvida, o Cliente deverá entrar em contato com o nosso Setor de Atendimento ao Cliente (SAC).
-  
-  9.3. Nos casos de ofertas de Produtos vendidos no Marketplace, o Cliente desde já reconhece que os Parceiros são exclusivamente responsáveis por todas as informações disponibilizadas no anúncio dos Produtos, incluindo, mas não se limitando, ao título, descrição, imagens, preço, prazos de entrega.
-  
-  ### X. Garantia Estendida
-  
-  10.1. A Garantia Estendida cobre os reparos de um Produto ou, até mesmo, a substituição do aparelho danificado por um novo, sem qualquer custo adicional para o consumidor. Trata-se de um serviço opcional para o Cliente, que pode ser adquirido no ato da compra ou em momento posterior, e entra em vigor, automaticamente, no dia seguinte ao término da garantia do fabricante. As condições gerais de uso do serviço são de responsabilidade da seguradora.
-  
-  ### XI. Característica dos produtos e risco à saúde
-  
-  11.1. Antes de comprar um Produto, o Cliente deve ler atentamente em sua página a descrição do uso e manuseio, bem como a indicação de faixa etária. Em caso de dúvida, deverá contatar o Setor de Atendimento ao Cliente (SAC).
-  
-  ### XII. Caso fortuito e força maior
-  
-  12.1. Nenhuma das partes será responsável perante a outra por qualquer falha ou atraso no cumprimento das obrigações constantes do presente contrato causados por casos fortuitos ou força maior.
-  
-  ### XIII. Foro
-  
-  13.1. Fica eleito o foro de domicílio do Cliente para dirimir eventuais controvérsias a respeito deste contrato.
-  `,
+1.1. It is Sebus' responsibility to maintain the confidentiality of all data and information provided by the Customer during the purchase process. The website's security is audited daily and protected against hackers through the "Site Blindado" seal.
+
+1.2. The Customer, in turn, agrees not to share their access passwords to the websites with third parties and to take reasonable measures to keep their information confidential. If the Customer identifies or suspects that third parties have gained access to their passwords, they agree to inform Sebus so that appropriate measures can be taken.
+
+1.3. Only individuals over 18 years of age may register and use the services provided by Sebus. We reserve the right to delete registrations and cancel orders from minors; however, payments made for services already rendered will not be refunded in the event of a violation of this rule.
+
+1.4. When filling out the registration, the Customer declares that the information identifying them is true, accurate, and complete, and acknowledges that any falsehoods may subject them to criminal and civil liabilities in accordance with Brazilian law.
+
+1.5. The Customer expressly authorizes Sebus to share their information and personal data in the following cases:
+
+1.5.1. With other companies within the economic group and authorities as necessary for the purchase process and compliance with current legislation.
+
+1.5.2. With business partners with whom Sebus maintains a collaborative or partnership relationship in order to offer financial solutions and pre-approved credit lines.
+
+II. Opinions, Ratings, and Questions from Registered Customers
+
+2.1. For the improvement of services and to enable Customers to make the best purchasing choices, Customers can post opinions, ratings, comments, and submit questions.
+
+2.2. By submitting any content, the Customer declares and warrants that: i) they are the exclusive author and owner of the rights related to the posted content; ii) the content is safe and accurate; iii) the use of the provided content does not violate Sebus' policies and will not harm any person or entity.
+
+2.3. Content posted by the Customer must not be false, inaccurate, deceptive, defamatory, accusatory, hateful, racially or religiously prejudiced or offensive, threatening, harmful to third parties, politically biased, infringe the law, violate copyrights or intellectual property rights, refer to other websites, addresses, email addresses, contact information, or phone numbers, and must not contain any computer viruses, worms, or other potentially harmful files or programs.
+
+2.4. Sebus assumes no responsibility for the content provided and posted by its Customers. However, Sebus.com has the discretion to not publish or delete any opinion, rating, data, questions, or any other content that is deemed contrary to the law, constitutional principles, morals, and ethics, as well as those that violate Sebus' terms and conditions, without any right to a refund of any amount paid by the Customer.
+
+2.5. Authors of offensive comments or those in disagreement with the Company's guidelines may be held civilly and criminally liable for published content that violates the law and causes harm to third parties or Sebus. The Customer agrees to indemnify the Company for all damages, losses, expenses, of any kind and nature, arising from or related to claims arising from the content provided by the Customer.
+
+2.6. By submitting any content, the Customer grants Sebus a perpetual, irrevocable, royalty-free license and rights to reproduce, use, copy, modify, delete in its entirety, adapt, publish, translate, create derivative works, and/or sell and/or distribute such content and/or incorporate it into any form, medium, or technology worldwide without compensation to the Customer. All content that the Customer submits may be used according to Sebus' criteria.
+
+2.7. By submitting any content, the Customer agrees that Sebus and its service providers may use their registered email address to contact them regarding their profile status and for other administrative reasons.
+
+III. Customer Service (SAC)
+
+3.1. The Customer has access to this service to address their doubts, resolve any requests or complaints regarding their order or any content available on the Website. The SAC can be reached by phone, website form, or by sending an email to atendimento.sub@Sebus.com.br, all of which are available on our "Customer Service" page.
+
+3.2. If contact with the SAC relates to products sold and delivered by Marketplace Partners, these Partners will be responsible for addressing doubts, requests, or complaints regarding the order or any content provided by them on the Websites.
+
+IV. Delivery Policy
+
+4.1. The delivery time for Products is provided during the purchase process and is counted in business days. Product deliveries are made from Monday to Friday, from 8 a.m. to 10 p.m. Exceptionally, some Product deliveries may occur on Saturdays, Sundays, and holidays.
+
+4.2. Checking the suitability of the Product's dimensions is the sole responsibility of the Customer, who must ensure that they comply with the spatial limits of elevators, doors, and corridors at the delivery location. Product assembly or disassembly, transportation by stairs and/or doors and windows, or hoisting of goods will not be performed.
+
+4.3. Up to three delivery attempts will be made at the location provided by the Customer, on alternate days, with a 48-hour interval between each delivery. It is essential that, at the specified address, there is an authorized person over 18 years of age carrying identification to receive the merchandise and sign the delivery protocol. If there are three unsuccessful delivery attempts, the Customer understands and accepts that the order will be returned to Sebus' Distribution Center.
+
+4.4. After the order is completed, it is not possible to change the payment method and/or delivery address, request an advance, or prioritize delivery.
+
+4.5. The delivery time provided during the Product purchase process takes into account the stock, region, invoice issuance process, and Product preparation time. With each update in the delivery status of the order, Sebus' system automatically sends email alerts to the Customer.
+
+4.6. The delivery freight cost is calculated based on the delivery location, weight, and dimensions of the Product.
+
+4.7. Sebus does not authorize the carrier to:
+
+· Enter the domicile where the Product will be delivered;
+
+· Deliver the Product by alternative means (e.g., hoisting the Product through the window);
+
+· Perform installation or maintenance of Products;
+
+· Open the Product's packaging;
+
+· Deliver the Product to an address different from what is indicated on the DANFE;
+
+· Deliver the Product to a person under 18 years old and/or without identification.
+
+4.8. Sebus is not responsible for the retention of goods at the State Treasury Department (Secretaria da Fazenda - SEFAZ) solely due to the Customer's outstanding issues. In these cases, it is necessary for the Customer to go to the tax office to have the goods properly released, as information regarding releases and payments is only provided to those concerned.
+
+4.9. The rules set out in items 4.1 to 4.8 also apply to Products sold and delivered by Marketplace Partners, except to the extent that the Partner's delivery policy expressly states otherwise.
+    `,
   },
   {
     id: 5,
     info: "Cookie Policy",
     text: `
-  A presente Política de Cookies descreve de forma simples, transparente e objetiva, a coleta dos seus dados pessoais, através de cookies, durante o acesso aos conteúdos desenvolvidos e/ou providos pela Associação Brasileira Beneficente Aslan (ABBA), em cumprimento às determinações da Lei nº 13.709/2018 também conhecida como Lei Geral de Proteção de Dados Pessoais (LGPD)
+This Cookies Policy provides a simple, transparent, and concise description of the collection of your personal data through cookies when accessing the content developed and/or provided by the Associação Brasileira Beneficente Aslan (ABBA), in compliance with the provisions of Law No. 13,709/2018, also known as the General Data Protection Law (LGPD).
 
-  Através desta Política, o titular de dados pessoais será informado:
-  
-  - i. O que são cookies;
-  
-  - ii. Quais os tipos de cookies são coletados;
-  
-  - iii. Para quais finalidades os cookies são coletados;
-  
-  - iv. Como o titular de dados pessoais pode gerenciar a coleta de cookies;
-  
-  - v. Política de privacidade
-  
-  ### 1. O QUE SÃO COOKIES?
-  Cookies são pequenos arquivos digitais, que podem conter dados pessoais, criados quando o usuário visita websites ou utiliza serviços on-line, com o principal intuito de ajudar a personalizar o acesso.
-  
-  1.1 Como funcionam os cookies na prática:
-  
-  Os cookies otimizam o acesso do usuário, registram as interações realizadas com o objetivo único de proporcionar uma melhor e mais otimizada experiência no website. Alguns cookies, por exemplo, permitem que o idioma de preferência, o endereço de IP, cores, nomes de usuários e senhas, sejam salvos. Tal mecanismo confere uma personalização de acordo com o comportamento do usuário ao utilizar o website.
-  
-  ### 2. TIPOS DE COOKIES COLETADOS
-  Por meio desta Política de Cookies, o titular de dados pessoais está ciente do tratamento de seus dados pessoais, através da coleta dos seguintes tipos de cookies:
-  
-  Nós utilizamos dois tipos de cookies na nossa Plataforma, que com relação ao tempo de vida os podem ser:
-  
-  I. Cookies de sessão: Apenas são utilizados durante o acesso do titular de dados pessoais ao website e não permanecem no navegador de internet. São os cookies temporários que permanecem arquivados até que o Usuário saia da Plataforma ou encerre o navegador.
-  
-  II. Cookies permanentes: São os cookies que ficam armazenados no dispositivo do Usuário até que sejam excluídos (o tempo que o Cookie permanecerá no dispositivo depende de sua “validade” e das configurações do seu navegador de internet) ou após o término do tempo de vida do Cookie, ou seja, após um certo número de dias. São esses cookies que são utilizados no acesso à Plataforma, mostrando os conteúdos mais relevantes e personalizados de acordo com os interesses do Usuário.
-  
-  Os cookies (de Sessão ou Persistentes) podem ser categorizados de acordo com sua função:
-  
-  Cookies Estritamente Necessários: permitem a navegação e utilização das aplicações, bem como acessar a áreas seguras da Plataforma. Sem estes cookies, a Plataforma não funciona corretamente;
-  Cookies Analíticos: coletam dados estatísticos anônimos com a finalidade de analisar a utilização da Plataforma e seu respectivo desempenho. Esse tipo de cookies é essencial para mantermos uma performance positiva, como: entender quais são as páginas mais populares e verificar o motivo dos erros apresentados nas páginas. Esses cookies não coletam nenhum dado pessoal.
-  Cookies de Funcionalidade: são utilizados para assegurar a disponibilização de funcionalidades adicionais da Plataforma ou para guardar as preferências definidas pelo Usuário ao navegar na internet, sempre que utilizar o mesmo dispositivo.
-  Cookies de Publicidade: coletam as informações de visita em nossa Plataforma para que as propagandas nela dispostas sejam mais relevantes para o Usuário e de acordo com os seus interesses. Geralmente estão atrelados a cookies de propriedade de terceiros. Caso você desabilite estes cookies, note que ainda visualizará as publicidades, mas elas serão personalizadas às suas preferências.
-  Cookies de Performance: coletam informações sobre a forma como o Usuário utiliza o site;
-  Cookies de terceiros: É possível a utilização de cookies de terceiros para fins estatísticos, com o objetivo de verificar a utilização dos websites e suas aplicações;
-  É possível que o titular de dados pessoais, após autorizar o uso de cookies, altere suas preferências e desative, totalmente ou em parte, os cookies que são utilizados.
-  
-  No entanto, alguns cookies são essenciais para executar certas funcionalidades. Nesse caso, se o titular de dados pessoais optar por desativá-los, algumas funções podem não ser efetivadas.
-  
-  ### 3. FINALIDADE DOS COOKIES COLETADOS
-  A ABBA coleta cookies de forma transparente, limitando-se ao mínimo necessário para o cumprimento das finalidades lícitas e específicas, descritas abaixo:
-  
-  Oferecer a melhor experiência aos Titulares que acessam nossa página;
-  Facilitar o uso e a navegação de acordo com o dispositivo utilizado no acesso;
-  Realizar análise estatística de tendências, para auxiliar e melhorar as estruturas e conteúdos oferecidos;
-  Administrar as nossas sites e mídias
-  Direcionar conteúdos e anúncios personalizados;
-  Permitir que nossos parceiros de negócios usem cookies ou outras tecnologias semelhantes dentro ou fora do serviço para os mesmos fins identificados acima, inclusive a coleta de informações sobre suas atividades online ao longo do tempo e em diferentes sites, aplicativos e/ou dispositivos
-  `,
-  },
+Through this Policy, the data subject will be informed of:
+
+- What cookies are;
+
+- What types of cookies are collected;
+
+- For what purposes cookies are collected;
+
+- How the data subject can manage the collection of cookies;
+
+- Privacy policy
+
+1. WHAT ARE COOKIES?
+Cookies are small digital files that may contain personal data, created when the user visits websites or uses online services, with the primary purpose of helping personalize access.
+
+1.1 How cookies work in practice:
+
+Cookies optimize user access, recording interactions for the sole purpose of providing a better and more optimized experience on the website. Some cookies, for example, allow preferences such as language, IP address, colors, usernames, and passwords to be saved. This mechanism provides personalization based on the user's behavior when using the website.
+
+2. TYPES OF COOKIES COLLECTED
+Through this Cookies Policy, the data subject is aware of the processing of their personal data through the collection of the following types of cookies:
+
+We use two types of cookies on our Platform, which can be related to their lifespan:
+
+I. Session cookies: They are only used during the data subject's access to the website and do not remain in the web browser. These are temporary cookies that are stored until the user exits the Platform or closes the browser.
+
+II. Permanent cookies: These are cookies that remain stored on the user's device until they are deleted (the time a cookie remains on the device depends on its "validity" and the settings of your web browser) or after the cookie's lifespan, meaning after a certain number of days. These cookies are used for access to the Platform, showing the most relevant and personalized content according to the user's interests.
+
+Cookies (Session or Persistent) can be categorized according to their function:
+
+Strictly Necessary Cookies: Allow navigation and use of the applications, as well as access secure areas of the Platform. Without these cookies, the Platform does not function properly.
+
+Analytical Cookies: Collect anonymous statistical data for the purpose of analyzing the use of the Platform and its performance. This type of cookies is essential to maintain a positive performance, such as understanding which pages are the most popular and checking the reasons for errors presented on the pages. These cookies do not collect any personal data.
+
+Functionality Cookies: Used to ensure the availability of additional Platform features or to store preferences set by the User while browsing the internet using the same device.
+
+Advertising Cookies: Collect visit information on our Platform so that the advertisements displayed are more relevant to the User and match their interests. They are usually associated with third-party cookies. If you disable these cookies, you will still see advertisements, but they will be personalized to your preferences.
+
+Performance Cookies: Collect information about how the User uses the site.
+
+Third-Party Cookies: It is possible to use third-party cookies for statistical purposes, aiming to verify the use of websites and their applications.
+
+The data subject may, after authorizing the use of cookies, change their preferences and disable, either fully or partially, the cookies that are used.
+
+However, some cookies are essential to perform certain functions. In this case, if the data subject chooses to disable them, some functions may not be effective.
+
+3. PURPOSE OF THE COLLECTED COOKIES
+ABBA collects cookies transparently, limiting itself to the minimum necessary for the fulfillment of lawful and specific purposes, as described below:
+
+Offer the best experience to data subjects who access our page;
+
+Facilitate usage and navigation according to the device used for access;
+
+Conduct statistical trend analysis to assist and improve the structures and content offered;
+
+Manage our websites and media;
+
+Direct personalized content and advertisements;
+
+Allow our business partners to use cookies or similar technologies within or outside the service for the same purposes identified above, including collecting information about your online activities over time and across different websites, applications, and/or devices.
+    `,
+  }
 ];
-
-
