@@ -1,6 +1,16 @@
 ## To run the mobile application, execute the command below
 
-First, install de dependencies:
+- Clone the project:
+  ```bash
+   git clone git@github.com:MateusAnderle/bookstore-full-stack-project.git
+  ```
+
+- Change to application folder:
+  ```bash
+   cd used-bookstore-react-native 
+  ```
+
+- Install the dependencies:
 
 ```bash
 yarn
@@ -12,7 +22,7 @@ Build dev client
 npx expo prebuild
 ```
 
-Then, run application
+- Run application:
 
 ```bash
 yarn ios || yarn android
