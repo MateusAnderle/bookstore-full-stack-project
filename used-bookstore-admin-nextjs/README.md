@@ -1,18 +1,29 @@
 ## To run the administrative panel, execute the command below
 
-First, install de dependencies:
+- Clone the project:
+  ```bash
+   git clone git@github.com:MateusAnderle/bookstore-full-stack-project.git
+  ```
 
-```bash
-npm install
-```
+- Change to application folder:
+  ```bash
+   cd used-bookstore-admin-nextjs 
+  ```
 
-Then
+- Install the dependencies:
+  ```bash
+  npm install
+  ```
 
-```bash
-npm run dev
-```
+- Run application:
+  ```bash
+  npm run dev
+  ```
+&nbsp;
 
-## Check the documentation of this project at: [Bookstore Full Stack Project](https://github.com/MateusAnderle/bookstore-full-stack-project)
+### Check the documentation of this project at: [Bookstore Full Stack Project](https://github.com/MateusAnderle/bookstore-full-stack-project)
+
+&nbsp;
 
 This project is under the MIT license. See the [LICENSE](https://github.com/MateusAnderle/bookstore-full-stack-project/blob/main/used-bookstore-admin-nextjs/LICENSE) for more information.
 
