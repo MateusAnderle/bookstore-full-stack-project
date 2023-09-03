@@ -27,6 +27,7 @@
   ```bash
   yarn ios || yarn android
   ```
+&nbsp;
 
 ## Check the documentation of this project at: [Bookstore Full Stack Project](https://github.com/MateusAnderle/bookstore-full-stack-project)
 
