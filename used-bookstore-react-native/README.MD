@@ -12,21 +12,21 @@
 
 - Install the dependencies:
 
-```bash
-yarn
-```
+  ```bash
+  yarn
+  ```
 
-Build dev client
+- Build dev client
 
-```bash
-npx expo prebuild
-```
+  ```bash
+  npx expo prebuild
+  ```
 
 - Run application:
 
-```bash
-yarn ios || yarn android
-```
+  ```bash
+  yarn ios || yarn android
+  ```
 
 ## Check the documentation of this project at: [Bookstore Full Stack Project](https://github.com/MateusAnderle/bookstore-full-stack-project)
 
