@@ -16,7 +16,7 @@ The **Used Bookstore** is a full stack application designed to manage an online 
 ---
 
 <div align="center" >
-<img src="https://github.com/MateusAnderle/bookstore-full-stack-project/assets/100309091/5717186b-837a-4d90-8928-eee66b2dfaf1" width="300">
+<img src="https://github.com/MateusAnderle/bookstore-full-stack-project/assets/100309091/f152f7db-32fb-4a12-90be-85c0a525787c" width="300">
 </div>
 
 ---
